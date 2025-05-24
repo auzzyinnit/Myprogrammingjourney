@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Coordinate Finder</title>
+</head>
+<body>
+  <h3>Move your mouse over the image to see coordinates</h3>
+  <img src="pexels-gulsum-coban-844585548-31979192.jpg" id="myImage" style="width:400px;height:400px" alt="Test Image">
+  <p id="coords">Coordinates: </p>
+
+  <script>
+    const img = document.getElementById('myImage');
+    const output = document.getElementById('coords');
+
+    img.addEventListener('mousemove', function(e) {
+      const rect = img.getBoundingClientRect();
+      const x = Math.floor(e.clientX - rect.left);
+      const y = Math.floor(e.clientY - rect.top);
+      output.textContent = `Coordinates: ${x}, ${y}`;
+    });
+  </script>
+</body>
+</html>

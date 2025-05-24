@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image mapping</title>
+</head>
+<body>
+    <h1>Image Mapping</h1>
+    <p>with image maps, you can create clickable areas on an image. This is made possible with the map and area tags.</p>
+    <img src="pexels-feyre-b-2152274459-32195239.jpg" alt="breakfast" usemap="#breakfastmap" width="350px" height="500px">
+    <map name="breakfastmap">
+    <area shape="circle" coords="106,252,80" href="https://www.starbucks.com/" alt="coffee"> 
+    <area shape="poly" coords="123,54,169,90,119,156,78,153,50,93" href="https://www.medicalnewstoday.com/articles/270406" alt="Avocado">
+    </map>
+    <p>The image map can also trigger a java script function.</p>
+    <img src="pexels-gulsum-coban-844585548-31979192.jpg" alt="greens" usemap="#greensmap" width="400px" height="400px">
+    <map name="greensmap">
+    <area shape="circle" coords="296,185,100"  href="https://simplehomeedit.com/recipe/green-leafy-salad-with-balsamic-dressing/" onclick="myFunction()">
+    </map>
+    <script>function myFunction(){alert("You like green Salads...tuff.");}</script>
+</body>
+</html>
