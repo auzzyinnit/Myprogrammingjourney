@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+        .exe{
+            background-color:purple;
+            font-family:cursive;
+        }
+
+        .fish{
+            background-color:beige;
+            color:brown;
+        }
+        .fire{
+            background-color:orange
+        }
+        .ice{
+            font-family:monospace;
+            color:blue;
+        }
+        .earth{
+            background-color:green;
+            color:rgb(200,255,200);
+        }
+    </style>
+</head>
+<body>
+ <h2>The Class Attribute</h2>
+ <p>The class attribute is often used to point to a class name in the style sheet</p>
+ <div class="exe">
+<p>This paragraph was styled by the class attribute</p>
+<p>The class attribute can be used with any html element and is case sensitive.</p>
+<h2>Class  Syntax</h2>
+<p class="fish">To create a class, a period (.) followed by the name of the class,e.g .fish. This paragraph was styled by the class named "fish"</p>
+ </div> 
+ <p class="fire ice">An element can belong to more than one class...,e.g, this paragraph belongs to the fire and ice class.</p>  
+ <h2>Class is JS</h2>
+ <p class="earth">Class can be used by Javascript to perfotm specific tasks,usually through the "getElementByClassName()" method</p>
+ <button onclick="myFunction()">HIDE</button>
+ <script>
+    function myFunction() {
+        var x = document.getElementsByClassName("earth");for (var i = 0;i < x.length; i++) {x[i].style.display = "none";}
+    }
+ </script>
+</body>
+</html>

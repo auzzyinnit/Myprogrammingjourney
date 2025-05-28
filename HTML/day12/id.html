@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Attribute</title>
+    <style>
+        #flip{
+            text-align:center;
+            font-size:5em;
+        }
+        #finish{
+            color:blue;
+            font-size:2em;
+            font-family:monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="flip">ID</h1>
+    <p>The id attribute,unlike the class attribute,cannot serve more than one element. The syntax for the id attribute is the "#" symbol followed by the id name.</p>
+    <h2>Creating bookmarks with id and href attributes</h2>
+    <p>Bookmarks are quite useful when navigating long pages...below are the steps to create one:</p>
+    <dl>
+        <dt>Create a bookmark with the id attribute</dt>
+        <dd>This is usually the navigator</dd>
+        <dt>Add a link to the bookmark from within the same page or another page. This link is the destination</dt>
+        <h2>ID in JS</h2>
+        <p id="finish">Like the class attribute,id can also be used to perform specific tasks, with the 'getElementById' method</p>
+        <button onclick="displayResult()">Click</button>
+        <script>
+            function displayResult(){
+                document.getElementById("finish").innerHTML="js doings";
+            }
+        </script>
+    </dl>
+    
+</body>
+</html>
