@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head</title>
+    <style>
+        body{
+            background-color:powderblue;
+            font-family:cursive;
+        }
+    </style>
+    <link rel="stylesheet" href="head.css">
+    <script>
+function myFunction() {
+  document.getElementById("head").innerHTML = "Internet Money";
+}
+</script>
+</head>
+<body>
+    <h1>The Head Element</h1>
+    <p>The head element contains the title,style,script,meta,link and base elements. It is placed between the body and the html tags.</p>
+    <dl>
+    <dt>Title element</dt>
+    <dd>Defines the title of the document. It is very important for search engine optimizations.</dd>
+    <dt>Style Element</dt>
+    <dd>This element is used to style info on the html page.</dd>
+    <dt>Link Element</dt>
+    <dd>This is used to relate the current file to an external html document.</dd>
+    <dt>Meta Element</dt>
+    <dd>This specifies the character set,page description,keywords,author and viewport settings.</dd>
+    <dt>Script Element</dt>
+    <dd>This is used to define client-side Javascripts,e.g</dd>
+    <p id="head">watch this..</p>
+    <button onclick="myFunction()">ABC</button>
+    <dt>Base Element</dt>
+    <dd>This specifies the base URL and/or the target for all the relative URLs in a page. It must have a href or target attribute or both. There can only be one base element in a document</dd>
+    </dt>
+    </dl>
+<h2>Viewport</h2>
+<p>The viewport is the user's visible area of the webpage. It varies with the device i.e it will be smaller on a phone,compared to a computer screen.</p>
+<p>In the meta tag,width=device-width sets the width of the page to follow the width of the device. The initial-scale=1.0 sets the initial zoom of the page when it is first loaded by the browser. </p>
+
+</body>
+</html>

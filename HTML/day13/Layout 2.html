@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family:cursive;
+
+        }
+        header{
+            background-color:green;
+            padding:35px;
+            text-align:center;
+            font-size:40px;
+            color:white;
+        }
+        nav{
+            float:left;
+            width:30%;
+            background-color:beige;
+            padding:20px;
+            height:300px;
+        }
+        nav ul{
+            list-style-type:none;
+            padding:0;
+        }
+        article{
+            float:left;
+            width:70%;
+            padding:20px;
+            background-color:white;
+            height:300px;
+        }
+        section ::after{
+            content:"";
+            display:table;
+            clear:both;
+        }
+        footer{
+            background-color:green;
+            padding:10px;
+            text-align:center;
+            color:white;
+        }
+        @media (max-width:600px){
+            nav,article{
+                width:100%;
+                height:auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS float Layout</h2>
+    <p>This is an example of a web page styled with the float property.</p>
+    <p>Resize the windows to see the responsive effect.</p>
+    <header>
+        <h2>Nigeria</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">Issues</a></li>
+                <li><a href="">Solutions</a></li>
+                <li><a href="">The other issues with the solutions</a></li>
+            </ul>
+        </nav>
+    <article>
+        <h1>Too Many Problems</h1>
+        <p>Nigeria is a blessed country, victim to bad leadership and misused resources. Sure, the people also contribute to the problem but we are stuck in a positive feedback system where by the more terrible the leadership gets, the worse it's citizens.</p>
+        <p>The inaction and lacadesical attitude of our leaders have taken a toll on the country and this is greatly affecting the life of the average Nigerian citizen.</p>
+    </article>
+    </section>
+    <footer>
+        <p>Wetin I wan talk again?</p>
+    </footer>
+</body>
+</html>
