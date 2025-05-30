@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Pages</title>
+</head>
+<body style="background-color:aqua;">
+    <h2>Responsive</h2>
+    <p>Responsive Web Design is simply about making web pages that look good on all devices.</p>
+    <p>The CSS width property set to 100% allows the image to be responsive and scale up and down:</p>
+    <img src="coverr - frame at 0m2s.jpg" alt="cover" width="100%" height="auto">
+    <p>The image:max-width property will make the image scale down if it has to, but it will not scale above its original size.</p>
+    <img src="image.jpeg" alt="image" style="max-width:100%; height:auto;">
+    <p>The picture element allows you to define different images for different browser sizes</p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="Monster Logo.png">
+        <source media="(max-width: 1500px)" srcset="Monster energy.png">
+        <img src="Monster energy.png" alt="Responsive Image">
+    </picture>
+    <h2>Responsive Text Size</h2>
+    <p style="font-size:5vw;">Text can be set with the "vw" unit, which means viewport width. That way, the text follows the window size</p>
+    <h2>Media Queries</h2>
+    <p>Media Queries can define completely different styles for different browser sizes.</p>
+</body>
+</html>
