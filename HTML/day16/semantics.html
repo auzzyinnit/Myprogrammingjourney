@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+        .section{
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .article{
+            background-color:red;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border:1px dotted pink;
+        }
+        .aside{
+            float:left;
+            width:20%;
+            font-family:cursive;
+            background-color:#bbb;
+        }
+    </style>
+</head>
+<body>
+    <h2>Semantic Elements</h2>
+    <p>Semantic Elements are elements with meaning. examples include:article,header,nav,etc...</p>
+    <p>Non-semantic elements include div and span.</p>
+    <dl>
+        <dt>Section Element</dt>
+        <dd>Defines a section in a document,e.g </dd>
+    </dl>
+    <section class="section">
+        <h2>Nickelodeon</h2>
+        <p>Nickelodeon has been one of the best channels, delivering quality shows for kids for over a decade.</p>
+    </section>
+    <dl>
+        <dt>Article Element</dt>
+        <dd>The article element defines independent, self contained content.e.g </dd>
+    </dl>
+    <article class="article">
+        <h2>Forbes</h2>
+        <p>Forbes is dedicated to the lives of certain figures in out mordern world...They could be artists, billionares, kings, actors,etc.</p>
+    </article>
+    <dl>
+        <dt>Header Element</dt>
+        <dd>This represents a container for introductory content or a set of navigational links. Although you can have several head elements, it cannot be placed within a footer element,address or another header element.</dd>
+        <dt>Footer Element</dt>
+        <dd>This defines a footer for a document or section. You can also have multiple footer elements.</dd>
+        <dt>Nav Element</dt>
+        <dd>This defines a set of navigation links.</dd>
+        <dt>Aside Element</dt>
+        <dd>The aside element defines some content aside from the one it is placed in. It should be indirectly related to the surrounding content e.g </dd>
+    </dl>
+    <aside class="aside">
+        <p>The key to typing faster is in muscle memory...so aim to build muscle memory as fast as possible.</p>
+    </aside>
+    <br><br><br><br><br><br>
+    <dl>
+        <dt>Figure and Figcaption Elements</dt>
+        <dd>The figure tag defines self-contained content,like illustrations,diagrams,pictures etc. while the fig caption tag defines a caption for the figure element. e.g</dd>
+    </dl>
+    <figure>
+        <img src="pexels-pixabay-33109.jpg" alt="trees" width="300" height="300">
+        <figcaption>Tranquility</figcaption>
+    </figure>
+</body>
+</html>
