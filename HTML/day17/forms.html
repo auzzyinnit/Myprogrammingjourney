@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <p>A form is used to collect user input. The form element is used to create forms</p>
+    <h3>Input Element</h3>
+    <p>The input element is the most used form element.</p>
+    <h3>Label Element</h3>
+    <p>The label element defines a label for many form elements.</p>
+    <h5>Input type=text</h5>
+    <p>This defines a single-line input field for text input.</p>
+    <form>
+    <label for="name">Name:</label>
+    <input type="text">
+    <label for="address">Address:</label>
+    <input type="text">    
+    </form>
+    <h3>Input type=radio</h3>
+    <p>This defines a radio button. It lets users selects one of two or more limited options.</p>
+    <form>
+    <label for="sex">Sex:</label>
+    <label for="male">Male</label>
+    <input type="radio" name="gender">
+    <label for="female">Female</label>
+    <input type="radio" name="gender">
+    <label for="binary">Binary</label>
+    <input type="radio" name="gender">    
+    </form>
+    <h3>Input type=checkbox</h3>
+    <p>This  defines a checkbox. Allows the user select 0 or more limited number of choices.</p>
+    <form>
+    <input type="checkbox">
+    <label for="Samsung">Samsung</label>
+    <input type="checkbox">
+    <label for="iphone">iPhone</label>
+    <input type="checkbox">
+    <label for="pixel">Google Pixel</label>
+    </form>
+    <h3>Submit Button</h3>
+    <p>input type=submit defines a button for submitting the form data to the handler. The form handler is specified in the action attribute in the form tag</p>
+    <form action="">
+        <input type="radio" name="tribe">
+        <label for="yoruba">Yoruba</label><br>
+        <input type="radio" name="tribe">
+        <label for="igbo">Igbo</label><br>
+        <input type="radio" name="tribe">
+        <label for="hausa">Hausa</label><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <p><strong>Each input field must have a name attribute. If the name attribute is omitted, the input field will not be sent at all</strong></p>
+</body>
+</html>

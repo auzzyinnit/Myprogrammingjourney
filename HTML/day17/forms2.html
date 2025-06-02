@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attributes</title>
+</head>
+<body>
+    <h1>Form Attributes</h1>
+    <h2>The action attribute</h2>
+    <p>The action attribute defines the action to be performed when the form is submitted. Usually, the form is sent to a file on the server when the user clicks the submit button.</p>
+    <h2>The target attribute</h2>
+    <p>The target attribute specifies where to display the response that is received after submitting the form. The target attribute can be _blank,_parent,_self,_top, with _self being it's default value</p>
+    <h2>The method attribute</h2>
+    <p>The method attribute specifies the html method to be used when submitting the form data. The form data can be sent as URL variables as HTTP post transactions.(method="get" or "post" respectively). Never use get to send sensitive data.</p>
+    <h2>The Autocomplete Attribute</h2>
+    <p>This attribute specifies wether or not a form should have the autocomplete on or off.</p>
+    <h2>The novalidate attribute</h2>
+    <p>This is a boolean attribute and it specifies wether or not the form data should be validated when submitted.</p>
+    <form action="/action_page.php" method="post target=_self" autocomplete="on" novalidate>
+        <label for="fname">First Name:</label>
+        <input type="text">
+        <label for="email">Email:</label>
+        <input type="email">
+        <input type="submit">
+    </form>
+</body>
+</html>
