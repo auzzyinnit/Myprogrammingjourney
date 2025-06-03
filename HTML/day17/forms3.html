@@ -26,5 +26,40 @@
     <p>This defines a list of pre-defined options for an input element. The list attribute of the input element must confer with the id attribute of the datalist element</p>
     <h3>Output Element</h3>
     <p>This defines the result of a calculation, for example, one performed by a script.</p>
+    <form action="">
+        <label for="name">Fullname:</label>
+        <input type="text"><br><br><br>
+        <label for="car">Car Select:</label>
+        <select name="car" id="car">
+            <option value="ferrari">Ferarri</option>
+            <option value="lamborghini">Lamborghini</option>
+            <option value="bugatti">Bugatti</option>
+        </select>
+        <label for="reason">Reason:</label>
+        <textarea name="reason" id="reason" rows="3" cols="20"></textarea><br><br>
+        <button type="button" onclick="alert('Aiit')">SUBMIT</button>
+        <fieldset>
+            <legend>Course:</legend>
+            <label for="src">Source</label><br>
+            <input type="text"><br>
+            <label for="dest">Destination</label><br>
+            <input type="text"><br><br>
+            <input list="brands">
+            <datalist id="brands">
+                <option value="Oppo">
+                <option value="Samsung">
+                <option value="iPhone">
+            </datalist>
+        </fieldset>
+    </form>
+    <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100+
+        <input type="range" id="b" name="b" value="50"><br>
+        =
+        <output name="x" for="a b"></output>
+        <input type="submit">
+    </form>
 </body>
 </html>
