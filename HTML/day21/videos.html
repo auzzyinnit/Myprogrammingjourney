@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h2>videos</h2>
+    <p>The video tag is used to display videos. The control attribute adds controls like play,pause and volume. The autoplay attribute automatically plays the video upon opening the page. The muted attribute lets video play but muted.</p>
+    <video height="300" width="400" controls autoplay muted>
+        <source src="Deadpool 2 (2018) __ Awafim.tv - VLC media player 2025-06-13 23-31-32.mp4" type="video/mp4">
+    </video>
+    <h2>Javascript:</h2>
+    <div style="text-align:center">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="enlarge()">Enlarge</button>
+        <button onclick="minimize()">Minimize</button>
+        <button onclick="normal()">Normal</button>
+        <br><br>
+        <video id="deadpool" width="500" height="500" autoplay controls>
+         <source src="Deadpool 2 (2018) __ Awafim.tv - VLC media player 2025-06-13 23-31-32.mp4" type="video/mp4">   
+        </video>
+    </div>
+    <script>
+        var myVideo=document.getElementById("deadpool")
+     function playPause(){if(myVideo.paused)myVideo.play();else myVideo.pause();}
+     function enlarge(){myVideo.width=800;myVideo.height=800;}
+     function minimize(){myVideo.wiidth=300;myVideo.height=300;}
+     function normal(){myVideo.width=500;myVideo.height=500;}   
+    </script>
+</body>
+</html>
