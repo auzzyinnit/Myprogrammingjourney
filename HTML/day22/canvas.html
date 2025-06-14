@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas Graphics.</title>
+</head>
+<body>
+    <h1>HTML Canvas</h1>
+    <h3>What is HTML Canvas?</h3>
+    <p>The &lt;canvas&gt; element is used to draw graphics, on the fly, via Javascript. Below is an example of a blue rectangle, drawn with canvas</p>
+    <canvas width="200" height="100" style="border:5px solid blue;"></canvas>
+    <p>We can add a line through the rectangle via Javascript:</p>
+    <canvas id="line" width="200" height="100" style="border:5px solid blue;"></canvas>
+    <script>
+        var c=document.getElementById("line");var ctx=c.getContext("2d");
+        ctx.moveTo(0,0);ctx.lineTo(200,100);ctx.stroke();
+    </script>
+    <p>We can also add a circle:</p>
+     <canvas id="circle" width="200" height="100" style="border:5px solid blue;"></canvas>
+     <script>
+        var c=document.getElementById("circle");var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+     </script>
+     <p>
+        draw a text:
+     </p>
+      <canvas id="text" width="200" height="100" style="border:5px solid blue;"></canvas>
+      <script>
+        var c=document.getElementById("text");var ctx=c.getContext("2d");
+        ctx.font="30px Arial";ctx.fillText("Hello World",10,50);
+      </script>
+      <p>stroke text:</p>
+       <canvas id="stroke" width="200" height="100" style="border:5px solid blue;"></canvas>
+       <script>
+        var c=document.getElementById("stroke");var ctx=c.getContext("2d");
+        ctx.font="30px Arial";ctx.strokeText("Watermelon",10,50);
+       </script>
+       <p>Linear Gradient:</p>
+        <canvas id="gradient" width="200" height="100" style="border:5px solid blue;"></canvas>
+        <script>
+            var c=document.getElementById("gradient");
+            var ctx=c.getContext("2d");
+            var grd=ctx.createLinearGradient(0,200,250,0);
+            // Create the gradient 
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"white");
+            // fill the gradient //
+            ctx.fillStyle=grd;
+            ctx.fillRect(10,10,150,80);
+        </script>
+        <p>Circular Gradient:</p>
+        <canvas id="circ" width="200" height="100" style="border:5px solid blue;"></canvas>
+        <script>
+            var c=document.getElementById("circ");var ctx=c.getContext("2d");
+            var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+            grd.addColorStop(0,"green");
+            grd.addColorStop(1,"blue");
+            ctx.fillStyle=grd;
+            ctx.fillRect(10,10,150,80);
+        </script>
+    <p>Image:</p>
+    <button onclick="image()">Mia San</button>
+    <img src="maximilian-kunstwadl-R0v_gy5ZPys-unsplash.jpg" alt="stadia" id="mia" height="299" width="499">
+     <canvas id="image" width="600" height="400" style="border:5px solid blue;"></canvas>
+     <script>
+        function image(){
+        var c=document.getElementById("image");
+        var ctx=c.getContext("2d");
+        var img=document.getElementById("mia");
+        ctx.drawImage(img,10,10);
+        }
+     </script>
+</body>
+</html>
