@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web APIs</title>
+    <style>
+        #fish,#meat{
+            border:2px solid red;
+            height:250px;
+            width:250px;
+            padding:5px;
+            float:left;
+            margin:10px
+        }
+        .flare{
+            width:600px;
+            height:500px;
+            border:3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web APIs</h1>
+    <p>A web API is a developer's dream. It can extend the functionality of the browser and simplify complex functions. API stands for Application Programming interface. It includes a set of functions and subroutines that allow the programmer to specific features or data of an application. The 5 main APIs are Geolocation,Drag and Drop, Web Storage, Web workers, Canvas and Server-sent Events APIs.</p>
+    <h3>Geolocation API</h3>
+    <p>This is used to access the user's current location. The location is not available until the user provides it. Below is a script to access current location:</p>
+    <script>
+    const x=document.getElementById("locale");
+    function getLocation() {
+        if (navigator.geolocation) {navigator.geolocation.getCurrentPosition(success, error);}
+        else{
+            x.innerHTML="Geolocation is not supported by this browser."
+        }
+        
+    }  
+    function success(position) {
+        x.innerHTML="Latitude: "+ position.coords.latitude +"<br>Longitude: "+ position.coords.longitude;
+    }
+    function error() {
+        alert("Sorry,no position available");        
+    }  
+    </script>
+    <button onclick="getLocation()">Finder</button>
+    <p id="locale"></p>
+    <h3>Drag and Drop API</h3>
+    <p>Drag and Drop API enables an element to be dragged and dropped. Below is a simple example:</p>
+    <script>
+     function dragstartHandler(ev){ev.dataTransfer.setData("text",ev.target.id);}
+     function dragoverHandler(ev){ev.preventDefault();}
+     function dropHandler(ev){ev.preventDefault();
+        const data=ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+     }  
+    </script>
+    <div id="fish" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    <div id="meat" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    <hr>
+    <img src="icons8-favicon-80.png" alt="iconic" draggable="true" ondragstart="dragstartHandler(event)" width="220" height="220" id="d">
+    <h3>Web Storage API</h3>
+    <p>With Web storage API,users can store data locally within the user's browser. Unlike cookies, web storage has a far larger limit (at least 5mb). Web storage provides 2 objects for storing data in the browser:window.localStorage,which has no expiration date, and window.sessionStorage, which stores data for one session.</p>
+    <script>
+        function clickCounter(){
+            const x=document.getElementById("counter");
+            if (typeof(Storage)!=="undefined"){if(localStorage.clickcount){localStorage.clickcount=Number(localStorage.clickcount)+1;}
+            else{localStorage.clickcount=1;}
+            x.innerHTML="You have been jobless "+localStorage.clickcount+" times.";
+        }
+        else{x.innerHTML="No Web Storage Support";}
+    }
+    </script>
+    <button onclick="clickCounter()">try am!</button>
+    <p id="counter"></p>
+    <h3>Web Workers API</h3>
+    <p>A web worker is an ecternal Javascript file that runs in the background without affecting the performance of the page. Below is a web worker that counts numbers:</p>
+    <script>
+     let w;
+     function startWorker(){
+        const x=document.getElementById("infinite");
+        if(typeof(Worker)!=="undefined"){if(typeof(w)=="undefined"){w=new Worker("aiit.js");}
+    w.onmessage=function(event){x.innerHTML=event.data;};}
+    else{x.innerHTML="no support for web workers";}
+     } 
+     function stopWorker(){w.terminate();w=undefined;}  
+    </script>
+    <p id="infinite"></p><br>
+    <button onclick="startWorker()">Start Counter</button>
+    <button onclick="stopWorker()">Stop Counter</button>
+    <h3>Sever-sent Events API</h3>
+    <p>SSE APIs allows pushing of messages/updates from a server to a web page via HTTP connection. Below is a typical server update:</p>
+    <script>
+    const a=document.getElementById("future");
+    if(typeof(EventSource)!=="undefined")
+    {var source=new EventSource("brev.asp");source.onmessage=function(event){a.innerHTML += event.data  +"<br>";};}
+    else
+    {a.innerHTML="cannot support SSE.";}    
+    </script>
+    <div id="future" class="flare"></div>
+</body>
+</html>
