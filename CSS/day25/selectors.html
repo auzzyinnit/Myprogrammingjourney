@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        p{
+            font-family:cursive;
+            color:navy
+        }
+        #freefire{
+            font-size:5em;
+            color:red;
+            text-align:center;
+        }
+        p.duro{
+            font-family:monospace;
+            color:aqua;
+        }
+        *{
+            background-color:black;
+            color:white;
+        }
+        h1,h3,h4{
+            text-align:right;
+            color:green;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <p>A selector selects the html element you want to style. There are 5 catergories of selectors :</p>
+    <ol style="list-style-type: lower-roman;">
+        <li>Simple Selectors-name,id and class</li>
+        <li>Combinator Selectors-selects element based on a specific relationship between them.</li>
+        <li>Pseudo-class Selectors-selects elements based on a certain state.</li>
+        <li>Pseudo-elements Selectors-select and style part of an element</li>
+        <li>Attribute Selectors-attributes or attribute values</li>
+    </ol>
+    <h2>Element Selector</h2>
+    <p>All paragraphs will be styled by the element selector.</p>
+    <h2 id="freefire">id Selector</h2>
+    <p>The above heading was styled by an id selector.</p>
+    <h2>Class Selector</h2>
+    <p class="duro">This specific paragraph was styled by a class selector.</p>
+    <h2>Universal Selector</h2>
+    <p>The entire page was styled by the universal selector.</p>
+    <h1>Olamide</h1>
+    <h3>Seyi Vibez</h3>
+    <h4>Wizkid</h4>
+    <p>The 3 above headings(aligned-right) were styled by a group selector.</p>
+</body>
+</html>
