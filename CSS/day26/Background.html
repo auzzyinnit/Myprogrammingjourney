@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds</title>
+    <style>
+        code{
+            color:tomato;
+            font-weight:bold;
+        }
+        body{
+            background-image:url(pexels-sohi-807598.jpg)
+        }
+        *{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Background</h1>
+    <p>CSS background properties are used to add background effects for elements.</p>
+    <h2>Background Color</h2>
+    <p>To set a background color, use the <code>background-color</code> property. The <code>opacity</code> attribute is used to set the transparency of an element.</p>
+    <p style="background-color:navy;opacity:0.2">Opacity 0.2</p>
+    <p style="background-color:navy;opacity:0.5">Opacity 0.5</p>
+    <p style="background-color:navy;opacity:1">Opacity 1</p>
+    <h2>Background Image</h2>
+    <p>To set a background image, use the <code>background-image</code> property. By default, the image repeats both horizontally and vertically until it covers the entire page. to prevent the image from repeating, the <code>background-repeat</code>:no-repeat property stops it from repeating. <code>repeat-x</code> and <code>repeat-y</code> sets the repeat to only horizontal and vertical respectively. The <code>background-position</code> property allows you to specify the position of the background iamge. The <code>background-attachment</code> property specifies wether or not the image scrolls with the page or is fixed(fixed/scroll values).</p>
+    <h2>Background Shorthand</h2>
+    <p>Instead of specifiing the background color,image,repeat,attachment and postion, you can merge all into one declaration. e.g</p>
+    <p>body{<code>background:</code><code style="color:powderblue">#AAAAAA url(pexels-sohi-807598.jpg) no-repeat left top</code>}</p>
+    <p>It must be in the above order (color,image,repeat,attachment,position)</p>
+
+</body>
+</html>
