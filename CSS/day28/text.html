@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text</title>
+    <style>
+        .color {
+            color: navy;
+        }
+
+        .align {
+            text-align: right;
+        }
+
+        .rtl {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        .vertical {
+            vertical-align: text-top;
+        }
+
+        .line {
+            text-decoration-line: underline overline;
+            text-decoration-color: red;
+            text-decoration-style: double;
+            text-decoration-thickness: 4px;
+        }
+
+        .transform {
+            text-transform: capitalize;
+        }
+        .space{
+            text-indent:80px;
+            letter-spacing:4px;
+            line-height:3;
+            word-spacing:30px;
+            white-space:nowrap;
+        }
+        .shadow{
+            text-shadow:2px 2px 4px green;
+        }
+    </style>
+    <link rel="stylesheet" href="code.css">
+</head>
+
+<body>
+    <h1>CSS Text</h1>
+    <p>CSS has a lot of properties for text formatting.</p>
+    <h3>Color</h3>
+    <p class="color">The <code>color</code> property is used to set the color of the text. The
+        <code>background-color</code> property defines the color behind the text.</p>
+    <h3>Text Alignment and Direction</h3>
+    <p class="align">The <code>text-align</code> property is used to set the horizontal alignment of a text. It can
+        either be left,right,centered or justified. The justify value stretches the text to ensure that each text has
+        equal width and the left and right margins are straight. The <code>text-align-last</code> property specifies how
+        to align the last line of a text.</p>
+    <p class="rtl">The <code>direction</code> and <code>unicode-bidi</code> properties can be used to change the
+        direction of an element.</p>
+    <p>The <code>vertical-align</code> property sets the vertical alignment of an element,e.g <img src="blue square.png"
+            alt="blue square" class="vertical" height="10px" width="10px"></p>
+    <h3 class="line">Text Decoration</h3>
+    <p>The <code>text-decoration-line</code> property is used to add decoration line to text. You can combine more than
+        one value. The <code>text-decoration-color</code> property is used to set the color of the decoration line. The
+        <code>text-decoration-style</code> property is used to set the style for the decoration line. The
+        <code>text-decoration-thickness</code> property is used to set the thickness of the text decoration. For the
+        shorthand, only the <code>text-decoration-line</code> property is required. It is in the order of
+        line-color-style-thickness. The <code>text-decoration:none</code> property is used to remove underlines from
+        links as links are underlined by default.</p>
+    <h3>Text Transformation</h3>
+    <p class="transform">The <code>text-transform</code> property is used to specify uppercase and lowercase in a text.
+        It can also capitalize the first letter of each word.</p>
+        <h3>Text Spacing</h3>
+        <p class="space">The <code>text-indent</code> property is used to speify the indentation of the first line of a text. The <code>letter-spacing</code> property is used to specify the space between the characters of a text. The <code>line-height</code> property is used to specify the space between lines. The <code>word-spacing</code> property is used to specify the space between the words in a text. The <code>white-space</code> property specifies how white space is handled inside an element.</p>
+        <h3>Text Shadow</h3>
+        <p class="shadow">The <code>text-shadow</code> property is used to add shadow to a text.</p>
+</body>
+
+</html>
