@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <link rel="stylesheet" href="code.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Audiowide&effect=fire|neon">
+    <style>
+        body{
+            font-size:100%;
+            background-color:bisque;
+        }
+        .font{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .f1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        .f2{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .f3{
+            font-family:"Trebuchet MS",Helvetica,sans-serif;
+            font-variant:small-caps;
+        }
+        .f4{
+            font-family:Copperplate,Papyrus,fantasy;
+            font-weight:bold;
+        }
+        .f5{
+            font-family:"Sofia",sans-serif;
+        }
+        .f6{
+            font-family:"Audiowide",sans-serif;
+        }
+        .f7{
+            font-family:"Noto Sans",sans-serif;
+        }
+        .f8{
+            font-family:Oswald,sans-serif;
+        }
+        .f9{
+            font:italic small-caps bold 1.5em "Brush Script MT",cursive
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Fonts</h1>
+    <p class="f1">Choosing the right font is important as it dictates the user's experience with the web page. In CSS, the <code>font-family</code> property is used to specify the font of a text.</p>
+    <h2>Web Safe Fonts</h2>
+    <p class="f2">These are fonts that are universally installed across all devices and browsers.This is why when choosing the font using the <code>font-family</code> property, add 2 or 3 more fonts and end with the generic font family. The best safe fonts include : Arial, Verdana, Tahoma, Times New Roman ,Brush Script MT,etc. The 5 generic font families are serif,sans-serif,monospace,cursive and fantasy.</p>
+    <h2>Font Style</h2>
+    <p class="f3">The <code>font-style</code> property is used style fonts. It is mostly used for italic text but it has 3 values;italic,normal and oblique. The <code>font-weight</code> property specifies the weight of a font. The <code>font-variant</code> property specifies whether or not a text should be displayed in a smal-caps font. The small-caps font raises the case of the lowercase letters but keeps them smaller than normal uppercase letters</p>
+    <h2 style="font-size:4em;">Font Size</h2>
+    <p class="f4"> The <code>font-size</code> property specifies the size of the text. Setting font size with pixels gives you full control of the text size. Font size can also be increased with the em value. 1em equals 16px as that is the default size of a font. However, not all browsers support em properly. To fix this issue, combine percentage and em font size by setting the default size of text in the page to perentage. Now, rescaling doesn't affect the font size.</p>
+    <h3>Google Fonts</h3>
+    <p class="f5 font-effect-fire">If you do not want to use any of the standard fonts in HTML, you can use google fonts. They are free to use.</p>
+    <p class="f6 font-effect-neon">Google have over 1000 fonts to choose from. They can also be styled like regular HTML fonts. Google also have font effects that you can use.</p>
+    <h2 class="f7">Font Parings</h2>
+    <p class="f8">Great font parings are essential for  great design. Some rules for choosing font pairs include complement,choosing one boss, being from the same font super family and a bit of contrast as being too similar will conflict.</p>
+    <h3>Font Properties</h3>
+    <p class="f9">To use the shorthand property, it must be in the order of style,variant,weight,font-size/line-height and family. Font size and fanily values are required.</p>
+</body>
+</html>
