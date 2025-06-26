@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code.css">
+    <title>CSS Links</title>
+    <style>
+        a:link,a:visited{
+            padding:10px 15px;
+            display:inline-block;
+            text-align:center;
+        }
+        a:link{
+            color:red;
+            text-decoration:none;
+            background-color:black;
+        }
+        a:visited{
+            color:lawngreen;
+            text-decoration:none;
+            background-color:navy;
+        }
+        a:hover{
+            color:navy;
+            text-decoration:none;
+            background-color:lawngreen;
+        }
+        a:active{
+            color:black;
+            text-decoration:none;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS LInks</h1>
+    <p>With CSS, links can be styled in different ways. They can be styled with any CSS property. Links can be styled according to what state they are in. The for states of links are : <code>a:link</code>,which is a normal unvisited link,<code>a:visited</code>,when the user has visited,<code>a:hover</code>,when the user mouses over it, and <code>a:active</code>, the moment the link is clicked.</p>
+    <div>
+        <a href="">Uncle Pele</a>
+    </div>
+    <p><code>a:hover</code> must come after <code>a:link</code> and <code>a:visited</code>. <code>a:active</code> must come after <code>a:hover</code>.</p>
+    <h4>Text Decoration</h4>
+    <p>Text decoration is mostly used to remove lines from links.</p>
+    <p>Background-color specifies the backgound color of the link.</p>
+    <p>We can combine several CSS properties to turn links into boxes or buttons</p>
+    <p>Below are different cursor types:</p>
+    <span style="cursor:auto;"></span>auto<br>
+    <span style="cursor:crosshair;">crosshair</span><br>
+    <span style="cursor:default;">default</span><br>
+    <span style="cursor:e-resize">e-resize</span><br>
+    <span style="cursor:help">help</span><br>
+    <span style="cursor:move">move</span><br>
+    <span style="cursor:n-resize">n-resize</span><br>
+    <span style="cursor:ne-resize">ne-resize</span><br>
+    <span style="cursor:nw-resize">nw-resize</span><br>
+    <span style="cursor:pointer">pointer</span><br>
+    <span style="cursor:progress">progress</span><br>
+    <span style="cursor:s-resize">s-resize</span><br>
+    <span style="cursor:se-resize">se-resize</span><br>
+    <span style="cursor:sw-resize">sw-resize</span><br>
+    <span style="cursor:text">text</span><br>
+    <span style="cursor:w-resize">w-resize</span><br>
+    <span style="cursor:wait">wait</span>  
+</body>
+</html>
