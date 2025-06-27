@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+     .qwerty{
+        background-color:rgb(250,150,50);
+        list-style:square;
+     }
+     .uiop{
+        background-color:rgb(50,150,250);
+        margin:4px;
+     }   
+    </style>
+</head>
+<body>
+    <h1>CSS Lists</h1>
+    <p>There are two main types of lists... ordered lists(<code>&lt;ol&gt;</code>) and unordered lists (<code>&lt;ul&gt;</code>).</p>
+    <p>The <code>list-style-type</code> property allows you to specify the type of list item marker. Below is an unordered list with a square as the item marker and an ordered list with the lower roman as the item marker:</p>
+    <ul list-style type="square">
+        <li>Rain</li>
+        <li>Sun</li>
+        <li>Autumn</li>
+    </ul>
+    <ol style="list-style-type:lower-roman;">
+        <li>6:16 in LA</li>
+        <li>Euphoria</li>
+        <li>Like That</li>
+    </ol>
+    <h2>Images as Item List Markers</h2>
+    <p>The <code>list-style-image</code> property specifies an image as the list item marker.</p>
+    <ul style="list-style-image:url('blue square.png');">
+        <li>Decateur</li>
+        <li>Seasons</li>
+        <li>Keep the family close</li>
+    </ul>
+    <h3>Position the list Item Markers</h3>
+    <p>The <code>list-style-positon</code> specifies the position of the item-list markers(bullet points). The outside value means the bullet points will be outside the list. The inside value means the bullet points will be inside the list.</p>
+    <ul style="list-style-position:inside;">
+        <li>East Atlanta Love Letter</li>
+        <li>If You Are Reading This, It's Too Late</li>
+        <li>good kid,m.A.A.d city</li>
+    </ul>
+    <p>The <code>list-style-type:none</code> property can be used to remove the markers/bullets. To remove the default margin and padding that comes with lists, set <code>margin:0</code> and <code>padding:0</code>.</p>
+    <h3>Shorthand Property</h3>
+    <p>When using the shorthand property, the order of arrangement is type,position, and image.</p>
+    <h3>Styling Lists with Colors</h3>
+    <p>Lists can be styled with colors:</p>
+    <ul class="qwerty">
+        <li class="uiop">Tems</li>
+        <li class="uiop">Ayra Starr</li>
+        <li class="uiop">Bloody Civilian</li>
+    </ul>
+</body>
+</html>

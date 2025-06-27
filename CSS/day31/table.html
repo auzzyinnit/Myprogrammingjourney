@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tables</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+    table{
+        border-collapse:collapse;
+        width:120%
+    }
+    th,td{
+        text-align:center;
+        border-bottom:5px groove green;
+        padding:20px 0;
+        vertical-align:bottom;
+    }
+    tr:hover{
+         background-color:rgb(0,200,200);
+        }
+    tr:nth-child(odd){
+        background-color:rgb(100,200,100)
+    }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Tables</h1>
+    <p>The look of a HTML table can be greatly  improved with CSS. To specify the border properties of a table in CSS, use the <code>border</code> property. If you need your table to span the entire width of the web page, add the <code>width:100%</code> to the &lt;table&gt; element. The <code>border-collapse</code> property is used to collapse the border to one single border, If you want borders only around the table, specify the border property only for the &lt;table&gt; element.</p>
+    <p>The width and height of a table are specified by the <code>width</code> and <code>height</code> properties. The <code>text-align</code> property sets the horizontal alignment of the content in &lt;th&gt; and &lt;td&gt;. To center align the content, add <code>text-align:center</code>. The <code>vertical-align</code> property sets the vertical alignment of the content in &lt;th&gt; and &lt;td&gt; elements.</p>
+    <h3>Table Styling</h3>
+    <p>To control the space between the border and content of a table, use the <code>padding</code> property on the &lt;th&gt; and &lt;td&gt; elements. For horizontal dividers, add the <code>border-bottom</code> property to the &lt;th&gt; and &lt;td&gt; elements. Use the <code>:hover</code> selector on &lt;tr&gt; to highlight table rows on mouse over. For striped tables, add the <code>nth-child()</code> selector and add <code>background-color</code> property to all even or odd table rows.</p>
+    <h3>Responsive Table</h3>
+    <p>A responsive table will add a horizontal scroll bar if the screen is too small to display the full content. To make a table responsive, add a container element (like div) with the <code>overflow-x:auto</code> property around the &lt;table&gt; element.</p>
+    <div style="overflow-x:auto">
+    <table>
+        <tr>
+        <th>Drake</th>
+        <th>Kendrick Lamar</th>
+        <th>J.cole</th>
+        <th>Travis Scott</th>
+        <th>Post Malone</th>    
+        </tr>
+        <td>God's Plan</td>
+         <td>Money Trees</td>
+         <td>Wet Dreams</td>
+        <td>Astrothunder</td>
+         <td>Better Now</td>
+        </tr>
+        <tr>
+         <td>In My Feelings</td>
+         <td>HUMBLE.</td>
+         <td>No Role Modelz</td>
+         <td>SICKO MODE</td>
+         <td>Circles</td>
+        </tr>
+        <tr>
+         <td>One Dance</td>
+         <td>DNA.</td>
+         <td>Middle Child</td>
+         <td>STARGAZING</td>
+         <td>Rockstar</td>
+        </tr>
+        <tr>
+         <td>Nonstop</td>
+         <td>Alright</td>
+         <td>Love Yourz</td>
+         <td>goosebumps</td>
+         <td>Sunflower</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
