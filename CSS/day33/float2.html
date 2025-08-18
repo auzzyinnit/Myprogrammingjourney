@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Examples</title>
+    <style>
+     *{
+        box-sizing:border-box;
+     }   
+    ul{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        background-color:#aaa;
+    }
+    li{
+        float:left;
+    }
+    li a{
+        display:inline-block;
+        color:black;
+        text-align:center;
+        padding:10px;
+        text-decoration:none;
+    }
+    li a:hover{
+        background-color:#555;
+        color:black;
+    }
+    .reset{
+        background-color:navy;
+    }
+    .img{
+        float:left;
+        width:33.33%;
+        height:400px;
+        padding:5px;
+    }
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .flex{
+        display:flex;
+        flex-wrap:nowrap;
+        background-color:black;
+    }
+    .box{
+        background-color:cadetblue;
+        width:50%;
+        margin:5px;
+        text-align:center;
+        line-height:100px;
+        font-size:30px;
+    }
+    .header,.footer{
+        background-color:lightcoral;
+        text-align:center;
+        padding:20px;
+        font-family:cursive;
+    }
+    .column{
+        padding:10px;
+        float:left;
+    }
+    .menu{
+        width:25%
+    }
+    .content{
+        width:75%;
+        font-size:50px;
+    }
+     .menu ul{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:visible;
+        background-color:white;
+    }
+    .menu li{
+       padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  float:none;
+    }
+    </style>
+</head>
+<body>
+  <ul>
+    <li><a href="" class="reset">Leon Thomas</a></li>
+    <li><a href="">Daniel Caesar</a></li>
+    <li><a href="">The Eternals</a></li>
+    <li><a href="">Khamari</a></li>
+  </ul>  
+  <hr>
+  <h2>Images Side by Side</h2>
+  <div class="clearfix">
+    <img class="img" src="Bayern Munich.jpg" alt="fcb">
+    <img class="img" src="Bayern Munich.jpg" alt="fcb">
+    <img class="img" src="Bayern Munich.jpg" alt="fcb">
+  </div>
+  <hr>
+  <h2>Flexbox</h2>
+  <div class="flex">
+    <div class="box">The honor roll and all the extra stupid things. Kanye West had a phenominal run in the 2010s with multiple grammy nominations and wins as well.</div>
+    <div class="box">Only the honor roll</div>
+  </div>
+  <hr>
+  <h2>Web Layout</h2>
+  <div class="header">LORD HURON</div>
+  <div class="clearfix">
+    <div class="column menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">I had all then most of you,some and then none of you. Take me back to the night we met.</div>
+  </div>
+  <div class="footer">THE NIGHT WE MET</div>
+</body>
+</html>

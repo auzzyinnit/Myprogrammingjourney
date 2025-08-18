@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        div{
+            float:left;
+        }
+        .div1{
+            background-color:red;
+        }
+        .div2{
+            background-color:green;
+        }
+        .div3{
+            background-color:blue;
+        }
+        .div4{
+            background-color:yellow;
+            clear:left;;
+        }
+        .div5{
+            background-color:purple;
+            clear:left;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Float</h1>
+    <p>The CSS<code>float</code> property specifies how an object should float. The CSS <code>clear</code> property specifies what elements can float beside the cleared element and on which side. Normally,div elements are displayed ontop of eachother. However, if we specify the float property, we can line them next to eachother: </p>
+    <div class="div1">Sunken Place</div>
+    <div class="div2">Far Fetched</div>
+    <div class="div3">Lucid Dreams</div>
+    <h1>clear and clearfix</h1>
+    <p>After using the <code>float</code> property and we want the next element to be underneath, we use the <code>clear</code> property. The <code>clear</code> property has 5 values: <code>none,left,right,inherit,both</code>.</p>
+     <div class="div1">Sunken Place</div>
+    <div class="div4">Far Fetched</div>
+    <div class="div5">Lucid Dreams</div>
+    <h3>clearfix hack</h3>
+    <p>If a floated element is taller than its container, we use the <code>overflow:auto</code> is used to "fix" the issue. However, there is a mordern hack to this issue:</p>
+    <code>
+    <pre>
+    .clearfix::after{
+      content:"";
+      clear:both;
+      display:table;
+    }
+     </pre>   
+    </code>
+</body>
+</html>

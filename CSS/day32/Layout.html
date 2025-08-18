@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <h1>CSS Layout</h1>
+    <p>The <code>display</code> property is the most important CSS property for controlling layout. It is used to specify how an element is shown on a web page. The default display value for most elements is <code>block</code> or <code>inline</code>.</p>
+    <p>Block elements always start on a new line and take up the full with of the line,e.g <code>p</code>,<code>div</code> while inline elements dont='t start on a new line and take up as much space as neccesary,e.g <code>span</code>,<code>img</code>. The <code>display:none</code> property is used to hide and show elements without deleting and recreating them. The <code>script</code> tag uses <code>display:none</code> as it's default property. The default display values can be overriden as well. This changes how the element is displayed <b>only</b>,not the type of element it is. So an inline element with it's display overriden cannot house another block element. The <code>visibility:hidden</code> property is used to hide elements.</p>
+    <h2>Width and Max-width</h2>
+    <p>Setting the <code>width</code> of a block element will prevent it from taking the full width available. The <code>max-width</code> property will improve the browser's handling of small windows. The browser then adds a horizontal scroll bar to the page. The <code>marign:auto</code> property horizontally centers the element in it's container</p>
+    <h2>The position property</h2>
+    <p>The <code>position</code> property specifies the type of positioning method to be used for an element. There are 5 different <code>position</code> values. They are <code>fixed,relative,static,absolute,sticky.</code>.</p>
+    <p>An element with the <code>position:static</code> property is not positioned in any special way,usually according to the normal flow of the web page. They are not affected by the top,right,left and bottom properties.</p>
+    <p>An element with the <code>position:relative</code> property is positioned relative to its normal position. They can be positioned by the top ,left,bottom,right properties.</p>
+    <p>An element with the <code>position:fixed</code> property is position relative to viewport,meaning it stays the same place even though the page is scrolled. The top,right,bottom and left properties are used to position the element</p>
+    <p>An element with the <code>position:absolute</code> is positioned relative to the nearest positioned ancestor.</p>
+    <p>An element with the <code>position:sticky</code> is positioned based on the user's scroll position. It toggles between <code>relative</code> and <code>fixed</code>, depending on the scroll positiion. You must specify at least one of the <code>top,right,left,bottom</code> for sticky postioning.</p>
+    <h4>You can position text over an image with the <code>absolute</code> property.</h4>
+</body>
+</html>

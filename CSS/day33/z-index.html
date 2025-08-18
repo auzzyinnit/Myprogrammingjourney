@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z-Index</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .img{
+            position: absolute;
+            z-index:-1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-index</h1>
+    <p>The <code>z-index</code> property specifies the stack order of an element. An element can have a positive or negative stack order:</p>
+        <img src="pexels-mat-brown-150387-728408.jpg" alt="rarri" height="300px" width="300px" class="img">
+    <p style="color:white;">This image will be placed behind this text. The <span style="color:black">example highlights the importance of z-index.</span></p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+    <p>The <code>z-index</code> property only works for elemnents with the <code>position</code> property. If 2 elements overlap eachother without the z-index, the element defined last will be on top</p>
+
+
+</body>
+</html>
