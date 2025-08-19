@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS inline-block</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .f1{
+            display:inline;
+            background-color:lightgreen;
+            width:100px;
+            height:100px;
+        }
+        .f2{
+            display:inline-block;
+            background-color:lightgreen;
+            width:100px;
+            height:100px;
+        }
+        .f3{
+            display:block;
+            background-color:lightgreen;
+            width:100px;
+            height:100px;
+        }
+        .nav{
+            background-color:lightseagreen;
+            list-style-type:none;
+            text-align:center;
+            margin:0;
+            padding:0;
+        }
+        .nav li{
+            display:inline-block;
+            font-size:30px;
+            padding:0px 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inline-Block</h1>
+    <p>Compared to <code>display:inline</code>,<code>display:inline-block</code> allows to set a width and height for the element. Compared to <code>display:block</code>,<code>display:inline-block</code> does not add a line break after the element. Below are examples:</p>
+    <p>I thank the lord my cup is <span class="f1">full and running</span> over.</p>
+    <p>I thank the lord my cup is <span class="f2">full and running</span> over.</p>
+    <p>I thank the lord my cup is <span class="f3">full and running</span> over.</p>
+    <hr>
+    <p><code>display:inline-block</code> can be used to display list items horizontally instead of vertically.</p>
+    <ul class="nav">
+        <li><a href="">LOVE.</a></li>
+        <li><a href="">LUST.</a></li>
+        <li><a href="">FEEL.</a></li>
+        <li><a href="">GOD.</a></li>
+
+    </ul>
+</body>
+</html>

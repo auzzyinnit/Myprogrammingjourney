@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Align</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .div1{
+            margin:auto;
+            width:50%;
+            border:3px inset green;
+        }
+        .img{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            width:50%
+        }
+        .abs{
+            position:absolute;
+            left:0;
+            width:200px;
+            height:100px;
+            border:2px solid red;
+        }
+        .p1{
+            padding:100px 0px;
+            border:3px solid blue;
+        }
+        .p2{
+            line-height:200px;
+            padding:200px;
+            border:3px groove beige;
+        }
+        .p3{
+            display:flex;
+            justify-content:center;
+            border:2px solid purple;
+            height:100px;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Align</h1>
+    <div class="div1">To horizontally center a block element, use the <code>marign:auto</code>. Center aligning has no effect if the width property is not set.</div>
+    <p>To center an image, set the left and right margins to <code>auto</code> and display to <code>block</code>.</p>
+    <img src="saurav-rastogi-wxggXydWNdE-unsplash.jpg" alt="miasanmia" height="400px" class="img">
+    <hr>
+    <h3>Left and Right using <code>position:absolute</code></h3>
+    <div class="abs">But you keep coming back, you keep coming you are my lucid dream. I still smell your.....forgot the lyrics</div>
+    <br>
+    <br><br><br><br><br><br><br><hr>
+    <p>Elements can also be aligned left or right using the <code>float</code> property</p>
+    <p> If an element is taller than the element containing it, and it is floated, it will overflow outside of its container. You can use the "clearfix hack" to fix this.</p>
+    <p class="p1">Elements can be centered vertically using <code>padding</code> property.</p>
+    <p class="p2">Elements can also be vertically aligned using the <code>line-height</code> property.</p>
+    <p class="p3">Things can also be centered using the Flexbox.</p>
+</body>
+</html>
