@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Classes</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+     a:hover{
+        color:red;
+     }
+     a.exp:hover{
+        font-size:20px;
+        color:blue;
+     }
+     div.talk:hover{
+        background-color:tomato;
+        border:2px inset beige;
+     }
+     p.tuff{
+        display:none;
+        background-color:aqua;
+        border:2px solid grey;
+     }
+     div:hover p{
+        display:block;
+     }
+     input:focus{
+        background-color:aqua;
+     }
+    </style>
+</head>
+<body>
+ <h1>Pseudo-Classes</h1>
+ <p>A pseudo-class is used to define a special state of an element.</p>
+ <h3>Anchor Pseudo-Classes</h3>
+ <p>ways of displaying a <a href="">link</a></p>
+ <p>Pseudo-Classes can be combined with HTML classes:</p> 
+ <p><a href="" class="exp">This link should be blue when you hover above it.</a></p> 
+ <div class="talk">You can also hover over div elements</div>
+ <hr> 
+ <div>This is a simple tooltip hover:
+ <p class="tuff">FEEL NO WAYSSS!</p>
+ <h2>The First-Child Pseudo-Class</h2>
+ <p>The <code>:first-child</code> pseudo-class matches a specified element that is the first child of another element. For example, <code>p:first-child {color: blue;} </code>Makes the first p element of any element to be blue.</p>
+ <p><code>p i:first-child{ color:blue }</code>makes the first i element inside a p element to be blue.</p>
+ <h3>The :lang() Pseudo-Class</h3>
+ <p>This allows you to define special rules for different languages.</p>
+ </div>
+ <h3>The focus Pseudo-Class</h3>
+ <form action="/action_page.php" method="get">
+  First name: <input type="text" name="fname"><br><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+    <p>A combinator explains the relationship between selectors. There are 4 combinators in CSS:Descendant Combinator(space),Child Combinator(&gt;),Next sibling Combinator(+) and Subsequent Sibling Combinator(~).</p>
+    <p>The desendant combinator matches all elements that are desendants of a specified element:</p>
+    <code>div p {
+        color:blue
+    }
+    </code>
+    <p>Child combinator selects all elements that are children of a specified element:</p>
+    <code>div > p { color:blue }</code>
+    <p>The next sibling combinator is used to select an element that is directly after another specific element:</p>
+    <code>div + p { color:blue }</code>
+    <p>The subsequent sibling combinator is used to select all elements that are next siblings of a specified element:</p>
+    <code>div ~ p { color:blue }</code>
+</body>
+</html>
