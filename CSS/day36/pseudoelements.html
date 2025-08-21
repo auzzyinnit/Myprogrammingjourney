@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Elements</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+    .ff::first-line{
+        font-variant:small-caps;
+    }
+    .qq::first-letter{
+        font-size:30px;
+        color:blue;
+        font-weight:bold;
+    }
+    .ee::before{
+        content:url('icons8-favicon-80.png');
+    }  
+    .ee::after{
+        content:url('icons8-favicon-80.png');
+    }
+    ::marker{
+        color:green;
+        font-size:2em;
+        font-weight:bold;
+    }  
+    .hh::selection{
+        background-color:black;
+        color:white;
+    }
+    </style>
+</head>
+<body>
+    <h1>CSS PSeudo-Elements</h1>
+    <p>Pseudo-elements are used to style specific parts of an element e.g the first letter or list item markers.</p>
+    <h3>The ::first-line pseudo-element</h3>
+    <p class="ff">The <code>::first-line</code> pseudo-element is used to add a special line to the first line of a text.It's properties include font properties,color properties,background properties,word spacing,letter spacing,text-decoration,vertical-align,text-transform,line-height,clear. This can only be applied to block elements.</p>
+    <h3>The ::first-letter pseudo-element</h3>
+    <p class="qq">The <code>::first-letter</code> pseudo-element is used to style the first letter of an element. It also can only be applied to block level elements.</p>
+    <p>Pseudo-elements can be combined with HTML elements.</p>
+    <h3>::before and ::after pseudo-elements</h3>
+    <p class="ee">The <code>::before</code> pseudo-element is used to insert some content before the content of the element, while the <code>::after</code> pseudo-element is used to insert some content after the content of the element</p>
+    <h3>The ::marker pseudo-element</h3>
+    <p>The <code>::marker</code> pseudo-element is used to select the markers of list items,e.g</p>
+    <ol>
+        <li>10 feet</li>
+        <li>9 feet</li>
+        <li>8 feet</li>
+    </ol>
+    <h3>The ::selection pseudo-element</h3>
+    <p class="hh">The <code>::selection</code> pseudo-element matches the portion of an element that is selected by the user</p>
+</body>
+</html>
