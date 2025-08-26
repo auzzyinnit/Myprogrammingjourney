@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Opacity</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+     .real{
+        float:left;
+        width:100%;
+     }
+     .qq{
+        opacity:0.5
+     }
+     .ww{
+        opacity:1.0;
+     }
+     .img{
+        float:left;
+        width:33.17%;
+        padding:1px;
+        opacity:0.4;
+     }
+     .img:hover{
+        opacity:1.0;
+     } 
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+     } 
+    </style>
+</head>
+<body>
+  <h1>CSS Opacity</h1>  
+  <p>The <code>opacity</code> property specifies the opacity/transparency of an element. It can take values from 0.0 to 1.0. The lower the value, the more transparent. Below is an image with 0.5 opacity and another with 1.0 opacity:</p>
+  <div class="real">
+    <img src="noppon-meenuch-oIUt0Nv4bQ0-unsplash - Copy.jpg" alt="MIASANMIA" class="qq" height="200px" width="300px">
+    <img src="noppon-meenuch-oIUt0Nv4bQ0-unsplash - Copy.jpg" alt="MIASANMIA" class="ww" height="200px" width="300px">
+  </div>
+  <h2>Transparent Hover Effect</h2>
+  <p>The <code>opacity</code> can be changed on mouse over with the <code>:hover</code> selector:</p>
+  <div class="clearfix">
+    <img src="noppon-meenuch-oIUt0Nv4bQ0-unsplash - Copy.jpg" alt="MIASANMIA" class="img" height="300px">
+    <img src="noppon-meenuch-oIUt0Nv4bQ0-unsplash - Copy.jpg" alt="MIASANMIA" class="img" height="300px">
+    <img src="noppon-meenuch-oIUt0Nv4bQ0-unsplash - Copy.jpg" alt="MIASANMIA" class="img" height="300px">
+  </div>
+  <p>When using the <code>opacity</code> property to add transparency to an element, all the child elements inherit that opacity. If you you do not want that to happen, use RGBA</p>
+</body>
+</html>
