@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        div {
+            margin-left: 25%;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: aqua;
+            width: 25%;
+            height: 100%;
+            position: fixed;
+            overflow: auto;
+        }
+
+        nav li a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav li a:hover:not(.active) {
+            background-color: powderblue;
+        }
+
+        .active {
+            background-color: navy;
+            color: white;
+        }
+
+        div section ul {
+            background-color: lightgrey;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        div section li {
+            display: inline;
+        }
+
+        div section li:hover {
+            background-color: black;
+            color: white;
+            border-right: 1px solid white;
+        }
+
+        div footer ul {
+            background-color: red;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            float: left;
+            ;
+        }
+
+        div footer li {
+            padding: 2px;
+            border-right: 1px solid black;
+            float: left;
+        }
+
+        div footer li:hover {
+            background-color: beige;
+            color: brown;
+            border-right: 1px solid white;
+        }
+
+        div footer li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown {
+            display: none;
+            position:absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .starter:hover .dropdown {
+            display: block;
+        }
+
+        li.starter {
+            display: inline-block;
+        }
+
+        .dropdown a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="" class="active">GTA 4</a></li>
+            <li><a href="">GTA 5</a></li>
+            <li><a href="">GTA 6</a></li>
+            <li><a href="">RDR 2</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>CSS Navigation</h1>
+        <p>A navigation bar is a list of links so using &lt;ul&gt; and &LT;li&gt; makes sense. To build a vertical
+            navigation bar, you can style the &lt;a&gt; elements inside it</p>
+        <p>To build a horizontal navigation bar, use floating or inline elements</p>
+        <section>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Address</li>
+                <li style="float:right">About</li>
+            </ul>
+        </section>
+        <h2>Drop Down Menu Example</h2>
+        <footer>
+            <ul>
+                <li>EYES</li>
+                <li>I KNOW?</li>
+                <li class="starter">
+                    <a href="">UTOPIA</a>
+                    <div class="dropdown">
+                        <a href="">TRavis</a>
+                        <a href="">TrAvis</a>
+                        <a href="">TraVis</a>
+                    </div>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
