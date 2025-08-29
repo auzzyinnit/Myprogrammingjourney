@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Attribute</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+    span[title]{
+        color:blue;
+        background-color:red;
+    }
+    [title~="jodeci"]:hover{
+        border:3px inset navy;
+    } 
+    code{
+        text-decoration:underline;
+    }   
+    </style>
+</head>
+<body>
+    <h1>CSS Selector Attribute</h1>
+    <p>It is possible to style html elements that have specific attributes or attribute values. the <code>[attribute]</code> selector is select elements with specific attributes. Below, I will style all span elements with a title to be blue texted and red background color</p>
+    <span title="drake">Chicago Freestyle.</span>
+    <span title="drake">Keep the family close.</span>
+    <span title="drake">If you're reading this, it is too late.</span>
+     <p title="jodeci freestyle">The <code>[attribute="value"]</code> selector is used to select elements with a specified attribute and value. The  <code>[attribute~="value"]</code> selector is used to select elements containing a specified word. The <code>[attribute|="value"]</code>  selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by hyphen. The value has to be a word or words separated by hyphen. The <code>[attribute^="value"]</code> selector is used to select elements with the specified attribute, whose value starts with the specified value. The <code>[attribute$="value"]</code> selector is used to select elements whose attributes value end with a specified value. The value does not have to be a word. The <code>[attribute*="value"]</code> selector is used to select elements whose attributes contain a specified value.</p>
+</body>
+</html>
