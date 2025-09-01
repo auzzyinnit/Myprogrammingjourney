@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Website</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: serif;
+            background-color: cornflowerblue;
+            padding: 10px;
+        }
+
+        .header {
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            text-shadow: 3px 3px 3px #606060;
+            background-color: darkblue;
+            padding: 30px;
+        }
+
+        .nav {
+            overflow: hidden;
+            background-color: darkslateblue;
+        }
+
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: navy;
+        }
+
+        .bighalf {
+            float: left;
+            width: 75%;
+        }
+
+        .smallhalf {
+            float: left;
+            width: 25%;
+        
+            padding-left: 20px;
+        }
+
+        .section {
+           
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .space {
+            background-color: white;
+            width: 100%;
+            padding: 20px
+        }
+
+        .section h3 {
+            color: white;
+        }
+
+        .main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            background-color: lightgrey;
+            text-align: center;
+            font-size: large;
+            padding: 20px 10px;
+            border-bottom: 12px inset darkgray;
+            border-right: 12px inset darkgray;
+        }
+
+        @media screen and (max-width:800px) {
+
+            .bighalf,
+            .smallhalf {
+                width: 100%;
+                padding: 0px;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .nav a {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>CSS</h1>
+        <p style="text-align:left;font-family:Cursive; text-shadow:none;font-size:16px">The Journey ahead...</p>
+    </div>
+    <div class="nav">
+        <a href="">W</a>
+        <a href="">T</a>
+        <a href="">A</a>
+        <a href="" style="float:right">F</a>
+    </div>
+    <div class="main">
+        <div class="bighalf">
+            <div class="section">
+                <h3>SECTION 80</h3>
+                <div class="space" style="height:300px">
+                    <h2>How it Started</h2>
+                    <p>...</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="space" style="height:200px">
+                    <h2>How it May End</h2>
+                    <p>...</p>
+                </div>
+            </div>
+         <div class="section">
+            <div class="space" style="height:100px">
+                <h2>The Aftermath</h2>
+                <p>...</p>
+            </div>
+        </div>
+        </div>
+        <div class="smallhalf">
+            <div class="section">
+                <div class="space" style="height:100px">
+                    <h2>What I missed</h2>
+                </div>
+            </div>
+            <div class="section">
+                <div class="space" style="height:100px">
+                    <h2>Did it Matter?</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>HEADLINES</h2>
+    </div>
+</body>
+
+</html>

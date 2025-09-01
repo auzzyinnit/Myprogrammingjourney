@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        code{
+            text-decoration:underline;
+        }
+        body{
+            counter-reset:Topic;
+        }
+        h3{
+            counter-reset:Subtopic;
+        }
+        h3::before{
+            counter-increment:Topic;
+            content:"Topic "counter(Topic) ":";
+        }
+        h4::before{
+            counter-increment:Subtopic;
+            content:counter(Topic)"."counter(Subtopic)" ";
+        }
+        ol{
+            counter-reset:Subtopic;
+            list-style-type:none;
+            margin:0px;
+            padding:0px;
+        }
+        li::before{
+            counter-increment:Subtopic;
+            content:counter(Topic)"."counter(Subtopic)" ";
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Counters</h1>
+    <p>Counters let you adjust the appearance of content based on its placement in the document. CSS counters are like variables. The values can be incremented by css rules.</p>
+    <p><code>counter-reset</code> creates a counter or resets one. <code>counter-increment</code> increments a counter value. <code>content</code> inserts generated content. <code>counter()</code> and <code>counters()</code> adds the value of a counter to an element. Counters can be nested as well.</p>
+    <h3>LIL TECCA</h3>
+    <h4>Favorite Lie</h4>
+    <h4>Ransom</h4>
+    <h4>Amigo</h4>
+    <h3>JUICE WRLD</h3>
+    <h4>Robbery</h4>
+    <h4>Otherside</h4>
+    <h4>Outta Pocket</h4>
+    <h3>XXXTENTACION</h3>
+    <h4>I don't even speak spanish lol</h4>
+    <h4>Sad!</h4>
+    <h4>True Love</h4>
+    <ol>
+        <li>HOE</li>
+        <li>Lucid Dreams</li>
+        <li>Changes</li>
+    </ol>
+</body>
+</html>
