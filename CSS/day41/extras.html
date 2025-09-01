@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Extras</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        p{
+            color:blue;
+        }
+        .anti{
+            color:red;
+        }
+        #reverse{
+            color:green;
+        }
+        h2{
+            color:yellow;
+        }
+        h2{
+            color:orange;
+        }
+        .norm{
+            color:black
+        }
+        .imp{
+            color:brown !important;
+        }
+        .calc{
+            width:calc(100% - 100px);
+            min-width:300px;
+            min-height:200px;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Specificity</h1>
+    <p class="anti" id="reverse" style="color:black;">This is the hierarchy that determines the style that is ultimately applied on an element. below are 2  <code>&lt;p&gt;</code> elements....one without a class and one with a class. The class is given a higher priority A third class will have an id. id is of higher priority than class. This paragraph has an inline CSS. This is of the highest priority.</p>
+    <p>A paragraph without a class</p>
+    <p class="anti">A paragraph with a class</p>
+    <p class="anti" id="reverse">A paragraph with a class and an id</p>
+    <p style="color:black">The order with which the css elements are arranged in the style tag in the head section matters as well. The h2 tag below picked the color closest to the closing tag i.e the last rule.</p>
+    <h2>see...</h2>.
+    <p style="color:black">id is of higher priority than selectors. Class selectors beats element selectors</p>
+    <h1>The !important Rule</h1>
+    <p class="imp" id="reverse">The <code>!important</code> rule is used to add more importance to a property/value than normal in CSS. It can overrride all other previous styling rules for that property on that element.
+    </p>
+    <h1>Math Functions</h1>
+    <p class="norm">CSS Math Functions allow mathematical expressions to be used as property values.</p>
+    <div class="calc">
+        This div is 100% - 100px wide and at least 300px wide. It is also at least 200px tall.
+    </div>
+    <h1>Performance and Optimization</h1>
+    <p class="norm">Efficient CSS helps your web page load faster and run more smoothly. some tips for better optimized CSS include:</p>
+    <ul>
+        <li>Use simple selectors</li>
+        <li>Avoid universal Selector for styling</li>
+        <li>Avoid inline styles</li>
+        <li>Combine and minify CSS</li>
+        <li>Placing CSS in the <code>head</code> tag so it loads before the page is rendered.</li>
+        <li>Use shorthand properties</li>
+        <li>Cache your CSS</li>
+    </ul>
+    <h1>Accessibility Styling</h1>
+    <p class="norm">Good CSS should help the user interact properly with the website. Good guide lines include:</p>
+    <ul>
+        <li>Use visible focus indicators e.g <code>:focus</code> pseudo-class</li>
+        <li>Provide high contrast between text and background for readability</li>
+        <li>Avoid Styling that hides focus</li>
+        <li>Use semantic tags like <code>nav</code> and <code>aside</code> instead of using <code>div</code> for everything</li>
+        <li>Use <code>prefers-reduced-motion @media</code> to check if user has asked to reduce animations and transitions. Some users prefer less animations on screen.</li>
+        <li></li>
+    </ul>
+</body>
+</html>
