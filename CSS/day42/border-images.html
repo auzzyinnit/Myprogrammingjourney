@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border-Images</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .bdimg{
+            border:15px solid transparent;
+            border-image:url('patterns.png') 30 round;
+        }
+        .bdimg2{
+            border:10px solid transparent;
+            border-image:url('patterns.png') 20 stretch;
+        }
+        .bdimg3{
+            border:10px solid transparent;
+            border-image:url('patterns.png') 159 round;
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Border-Images</h1>
+    <p class="bdimg">The <code>border-image</code> property allows you to specify an image to be used instead of the normal border around an element. It needs the <code>border</code> property to be set. The <code>border-image</code> property is short hand for <code>border-image-source</code>,<code>border-image-slice</code>,<code>border-image-outset</code> and <code>border-image-repeat</code> properties</p>
+    <p class="bdimg2">Here it stretches one image to make the border.</p>
+    <p class="bdimg3">Just the corners</p>
+</body>
+</html>

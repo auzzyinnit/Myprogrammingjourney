@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        *{
+            color:white;
+        }
+        code{
+            text-decoration:underline;
+            background-color:transparent;
+        }
+        .dumbo{
+            background-image:url('angel cut.png'),url('angel cut.png'),url('night sky.jpg');
+            background-position:right bottom,left bottom,left top;
+            background-repeat:no-repeat,no-repeat,no-repeat;
+            background-size:contain,contain,100% 100%;
+        }
+        .alt{
+            color:powderblue;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="dumbo">
+  <h1>CSS Backgrounds</h1>
+  <p>CSS allows you to add multiple background images for an element via the <code>background-image</code> property. This entire section will have multiple background images. The <code>background-size</code> property allows you to specify the size of the background image. <code>cover</code> property of <code>background-image</code> scales the image to cover the entire content and as such,parts of the image may not be displayed. <code>contain</code> property ensures that  the image stays within the boundaries of the content. If you want a background image that covers the entire background at all times, use the <code>background:</code><code class="alt">url('image') no-repeat center fixed;</code> and <code>background-size:</code><code class="alt">cover;</code> properties. The <code>background-clip</code> property is used to  specify where the image is positioned. It has 3 values:border-box(outside edge of the border),padding-box(outside edge of the padding) and content-box(outside edge of the content). This goes for <code>background-origin</code> property as well.</p>  
+  </div>
+</body>
+</html>
