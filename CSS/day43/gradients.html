@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .lg {
+            background-image: repeating-linear-gradient(to right,red,orange,yellow,rgba(0, 255, 0, 0.5),blue,indigo,violet);
+        }
+        code {
+            background-color: transparent;
+        }
+        .rg{
+            background-image:radial-gradient(green,white,green);
+            width:30%;
+            height:300px;
+            padding:10px;
+        }
+        .cg{
+            background-image:conic-gradient(at 70%,red 90deg,green 180deg,blue 270deg,aqua 360deg);
+            width:30%;
+            height:300px;
+            padding:50px;
+            border-radius:50%
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Gradients</h1>
+    <p>CSS gradients lets you display smooth transitions between 2 or more colors. There are linear gradients,radial
+        gradients and conic gradients.</p>
+    <div class="lg">
+        <h2>Linear Gradients</h2>
+        <p>The <code style="color:white">linear-gradient()</code> function creates a linear gradient .Transparency can
+            also be used. The <code>repeating-linear-gradient()</code> function can be used to repeat linear gradients.
+        </p>
+    </div>
+    <div class="rg">
+        <h2>Radial Gradients</h2>
+        <p>The <code>radial-gradient()</code> function creates a radial gradient. A radial gradient is defined by its center.</p>
+    </div>
+    <br>
+    <div class="cg">
+        <h2>Conic Gradients</h2>
+        <p>The <code>conic-gradient</code> function creates a conic gradient. Add <code>border-radius:50%</code> to make the conic gradient look like a pie chart. The [at position] specifies the center position of the gradient and [from angle] rotates the gradient at a specific angle. <code>repeating-conic-gradient</code> is used to repeat the conic gradient.</p>
+    </div>
+</body>
+
+</html>

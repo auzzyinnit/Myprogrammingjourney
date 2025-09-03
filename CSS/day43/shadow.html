@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .tsh1{
+            text-shadow: 0px 0px 3px red;
+        }
+        .tsh2{
+            color:white;
+            text-shadow: 2px 2px 4px black;
+        }
+        .tsh3{
+            text-shadow:0 0 4px blue, 0 0 4px red;
+        }
+        .tsh4{
+            color:red;
+            font-size:40px;
+            text-shadow:-1px 0 black,0 1px  black,1px 0 black,0 -1px black;
+        }
+        .bxsh{
+            background-color:aqua;
+            box-shadow:10px 10px 10px 0px navy inset,10px 10px 6px -1px navy ;
+            width:50%;
+            padding:20px;
+        }
+        div code{
+            background-color:transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Shadows</h1>
+    <p class="tsh1">With <code>text-shadow</code>, you can add shadow to your text.</p>
+    <p class="tsh2">White text with black shadow</p>
+    <p class="tsh3">A text can have multiple shadows</p>
+    <p class="tsh4">The shadow text property can be used to create a border around a text</p>
+    <div class="bxsh">
+    <h2>Box Shadow</h2>
+    <p>The <code>box-shadow</code> property is used to apply one or more shadows to an element. The <code>spread</code> parameter defines the spread of the shadow. The <code>inset</code> parameter is used change the shadow from an outset to an inset</p>
+    </div>
+</body>
+</html>

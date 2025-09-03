@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors and color keywords</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .rgb {
+            color: rgb(7, 107, 207);
+        }
+
+        .hsl {
+            color: hsl(360, 100%, 50%)
+        }
+
+        .rgba {
+            background-color: rgba(0, 0, 0, 0)
+        }
+
+        div {
+            color: navy;
+            border: 3px solid currentcolor;
+            border-radius: 20px 40px 20px;
+            padding: 20px;
+        }
+        span{
+            border:inherit;
+            border-radius:inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Colors</h1>
+    <p class="rgba">There are <span class="rgb">RGB,RGBA colors</span>,<span class="hsl"> HSL,HLSA colors</span>.</p>
+    <div>
+        The <code>transparent</code> keyword, which is equivalent to rgba(0,0,0,0) can be used to to make a color
+            transparent. The <code>currentcolor</code> keyword holds the current value of the color property of an
+            element.<span> The <code>inherit</code> key word can be used to inherit a property from the parent element.</span>
+    </div>
+</body>
+
+</html>
