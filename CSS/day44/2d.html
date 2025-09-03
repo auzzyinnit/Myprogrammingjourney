@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D Transforms</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .p1{
+            transform:translate(100px,100px);
+        }
+        .p2{
+            transform:rotate(180deg);
+        }
+        .p3{
+            transform:scale(0.5,0.5);
+        }
+        .p4{
+            transform:scaleX(2);
+            margin-left:500px;
+        }
+        .p5{
+            transform:scaleY(3);
+        }
+        .p6{
+            transform:skewX(40deg);
+        }
+        .p7{
+            transform:skewY(-20deg);
+        }
+        .p8{
+            transform:skew(50deg,-30deg);
+            margin-left:100px;
+        }
+        .p9{
+            transform:matrix(2,0.5,0.5,2,200,200);
+            margin-left:100px;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS 2D Transforms</h1>
+<p>The <code>transform</code> property applies a 2D or 3D transformation to an element. Functions of this property include <code>translate(),rotate(),scaleX()scaleY(),scale(),skewX(),skewY(),matrix()</code>.</p>
+<p class="p1">The <code>translate()</code> function moves an element from its current position according to x-axis and y-axis parameters.</p>
+<p class="p2">The <code>rotate()</code> function rotates an element clockwise or counter-clockwise,depending on the given degree.</p>
+<p class="p3">The <code>scale()</code> function increases or decreases the size of an element.</p>
+<br><br><br><br><br><br>
+<p class="p4">The <code>scaleX()</code> function increases or decreases the width of an element.</p>
+<p class="p5">The <code>scaleY()</code> function increases or decreases the height of an element.</p>
+<p class="p6">The <code>skewX()</code> function skews an element along the x-axis by a given angle.</p>
+<p class="p7">The <code>skewY()</code> function skews an element along the y-axis by the given angle.</p>
+<br><br><br><br><br><br><br>
+<p class="p8">The <code>skew()</code> function skews an element along the x and y axis</p>
+<br><br><br><br><br><br><br><br>
+<p class="p9">The <code>martix()</code> function combines all the 2D transform functions into one. It takes 6 functions:scaleX(),skewY(),skewx(),scaleY(),translateX(),translateY().</p>
+</body>
+</html>

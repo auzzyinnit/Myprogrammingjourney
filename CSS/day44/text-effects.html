@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Effects</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .teff1{
+            border:1px solid black;
+            width: 630px;
+            overflow:hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+        }
+        .teff1:hover{
+            overflow:visible;
+            width:700px;
+        }
+        .teff2{
+            word-wrap:break-word;
+            width:200px;
+            border:1px solid black;
+        }
+        .b{
+            color: dodgerblue
+        }
+        .v{
+            writing-mode:vertical-rl;
+        }
+        .o{
+            color:sienna
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Text Effects</h1>
+    <p class="teff1">The <code>text-overflow</code> property specifies how overflowed content should be displayed to the user. Chef Richard.</p>
+    <p class="teff2">The <code>word-wrap</code> property allows long word to be broken up and wrap unto insertanextremelyunbelieveablylongword the next line. It forces the word to wrap.</p>
+    <p>The <code>word-break</code> property specifies line breaking rules. <code class="b">keep-all</code>breaks at hyphens. <code class="b">break-all</code> breaks the word at any character.</p>
+    <p>The <code>writing-mode</code>specifies wether the lines of text are laid out <span class="v">vertically</span> or horizontally and which direction(<code class="o">vertical-rl,vertical-lr,horizontal-tb,horizontal-bt</code>).</p>
+</body>
+</html>
