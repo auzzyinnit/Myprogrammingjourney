@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .hov:hover{
+            width:300px;
+            height:200px;
+            background-color:coral;
+            transform:rotate(360deg);
+        }
+        .hov{
+            border:2px solid black;
+            width:100px;
+            height:100px;
+            padding:20px;
+            overflow:hidden;
+            transition:width 2s, height 2s, background-color 4s,transform 2s;
+            transition-delay:0.5s;
+        }
+        code{
+            background-color:transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="hov">
+    <h1>CSS Transitions</h1>
+    <p>CSS Transitions allow you to change properties of an element smoothly over a time duration.</p>
+    <p><code>transition,transition-delay,transition-duration,transition-timing-function,transition-property</code> are the CSS transition properties.</p>
+    </div>
+</body>
+</html>

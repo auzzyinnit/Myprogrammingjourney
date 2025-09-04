@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Transforms</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        code{
+            background-color:transparent;
+        }
+        .p1{
+         border:1px solid black;
+            width:300px;
+            height:100px;
+            background-color: cadetblue;   
+        }
+        .p2{
+            border:1px solid black;
+            width:300px;
+            height:100px;
+            background-color: coral;   
+        }
+        .p3{
+            border:1px solid black;
+            width:300px;
+            height:100px;
+            background-color: darkgoldenrod;   
+        }
+        .p1:hover{
+            transform:rotateX(180deg);
+            border:1px solid black;
+            width:300px;
+            height:100px;
+            background-color: cadetblue;
+        }
+        .p2:hover{
+            transform:rotateY(180deg);
+            border:1px solid black;
+            width:300px;
+            height:100px;
+            background-color: coral;
+        }
+        .p3:hover{
+            transform:rotateZ(180deg);
+            border:1px solid black;
+            width:300px;
+            height:100px;
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 3D Transform</h1>
+    <p>3D transformation functions are <code>rotateX,rotateY,rotateZ</code>.</p>
+    <p class="p1"><code>rotateX()</code> function rotates an element along its x-axis.</p>
+    <p class="p2"><code>rotateY()</code> function rotates an element along its Y-axis.</p>
+    <p class="p3"><code>rotateZ()</code> function rotates an element along its z-axis.</p>
+</body>
+</html>

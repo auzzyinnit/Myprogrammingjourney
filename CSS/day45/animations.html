@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        code{
+            background-color:rgba(140,140,140,0.3);
+            animation-name:Malice;
+            animation-duration:10s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes Malice{
+            0%{color:black;}
+            10%{color:blue;}
+            20%{color:white;}
+            30%{color:green;}
+            40%{color:indigo;}
+            50%{color:orange;}
+            60%{color:red;}
+            70%{color:navy;}
+            80%{color:white;}
+            90%{color:blue;}
+            100%{color:black;}
+        }
+        .anime{
+            background-color:coral;
+            width:550px;
+            height:350px;
+            border:2px solid black;
+            animation-name:pusha;
+            animation-duration:10s;
+            animation-iteration-count: infinite;
+            padding:20px;
+        }
+        @keyframes pusha{
+            0%{background-color:coral;color:black;}
+            10%{background-color:aquamarine;color:black;}
+            20%{background-color:blueviolet;color:navy;}
+            30%{background-color:crimson;color:white;}
+            40%{background-color:darkgoldenrod;color:black;}
+            50%{background-color:forestgreen;color:black;}
+            60%{background-color:indigo;color:white;}
+            70%{background-color:lightcoral;color:black;}
+            80%{background-color:mediumslateblue;color:maroon;}
+            90%{background-color:orangered;color:white;}
+            100%{background-color:coral;color:black;}
+        }
+    </style>
+</head>
+<body>
+    <div class="anime">
+    <h1>CSS Animations</h1>
+    <p>CSS Allows animation of elements without Javascript. An animation lets an element change from one style to another. When the <code>@keyframe</code> property is specified,the animation will change styles at certain times. The animation must be bound to an element. The <code>animation-duration</code> property specifies how long the animation would take to complete. The <code>animation-delay</code> property specifies the delay for an animation to start. Negative values of <code>animation-delay</code> property will make the animation start as though it has been playing for "N" seconds. <code>animation-iteration-count</code> property specifies how many times the animation should run. <code>animation-direction</code> property specifies wether the animation should run foward or backward or in alternate cycles. <code>animation-timing-function</code> property specifies the speed curve of the animation. <code>animation-fill-mode</code> property specifies a style for the target element when animation is not playing. The <code>animation</code> shorthand property consists of <code>animation-name,animation-duration,animation-timing-function,animation-delay,animation-iteration-count,animation-direction</code></p>
+    </div>
+</body>
+</html>
