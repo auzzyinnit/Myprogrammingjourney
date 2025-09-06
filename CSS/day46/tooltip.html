@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tooltip</title>
+    <style>
+        .main{
+            position:relative;
+            display:inline-block;
+        }
+        .tooltip{
+            visibility:hidden;
+            width:120px;
+            background-color:burlywood;
+            color:brown;
+            text-align:center;
+            border-radius:7px;
+            padding:5px 0;
+            position:absolute;
+            z-index:1;
+            opacity:0;    
+            top:120%;
+            left:50%;
+            margin:-60px;
+        }
+        .main:hover .tooltip{
+            visibility:visible;
+            opacity:1;
+            transition:opacity 2s;
+        }
+         .main .tooltip::after{
+            content:"";
+            position:absolute;
+            top:115%;
+            left:50%;
+            margin:-5px;
+            border-width:5px;
+            border-style:solid;
+            border-color:burlywood transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Tooltip</h1>
+   <div class="main">A tooltip is used to show additional information about an element when you hover over it.
+    <span class="tooltip">Just checking      
+    </span>
+   </div>
+</body>
+</html>
