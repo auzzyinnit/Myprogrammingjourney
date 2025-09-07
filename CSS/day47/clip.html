@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Shapes</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .cp1{
+            clip-path:circle(50%);
+            height:300px;
+            width:300px;
+        }
+        .cp2{
+            clip-path:circle(50% at right);
+            width:300px;
+            height:300px;
+        }
+        .cp3div{
+            height:205px;
+            width:800px;
+            border:1px solid black;
+            padding:20px;
+        }
+        .cp3{
+            clip-path:circle(40%);
+            float:left;
+            shape-outside:circle(50%);
+            height:200px;
+            width:200px;
+        }
+        .cp4{
+            clip-path: ellipse(50% 40%);
+            width:300px;
+            height:300px;
+        }
+        .cp5{
+            clip-path:ellipse(50% 40% at right);
+            width:300px;
+            height:300px;
+        }
+        .cp6div{
+            border:1px solid black;
+            width:650px;
+            height:302px;
+            padding:10px;
+        }
+        .cp6{
+            clip-path:ellipse(30% 40%);
+            shape-outside:ellipse(37% 40%);
+            width:300px;
+            height:300px;
+            float:left;
+        }
+        .cp7{
+            clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            width:300px;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Image Shapes</h1>
+    <p>The <code>clip-path</code> property lets you clip an element to a basic shape.</p>
+    <h3>circle</h3>
+    <img src="coverr - frame at 0m2s.jpg" alt="COV" class="cp1">
+    <h3>circle 50% at right</h3>
+    <img src="coverr - frame at 0m2s.jpg" alt="COV" class="cp2">
+    <p>The <code>shape-outside</code> property lets you define a shape for the wrapping of the inline content.</p>
+    <div class="cp3div">
+        <img src="coverr - frame at 0m2s.jpg" alt="CO" class="cp3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac laoreet quam, id aliquet nisl. Etiam id eros ligula. Aenean euismod, enim sed mollis feugiat, magna massa cursus leo, ut maximus metus eros non ante. Praesent eget tincidunt mauris, ut euismod ipsum. In hac habitasse platea dictumst. In dapibus tortor magna, elementum elementum neque sagittis id. Integer vestibulum semper dui, quis finibus libero elementum nec. Fusce ultricies lectus a eros interdum, efficitur iaculis nibh varius. Praesent sed ex bibendum, fermentum tortor nec, tincidunt augue. Maecenas in lobortis ligula, at viverra velit. Donec facilisis blandit purus sed efficitur. Duis est augue, bibendum quis bibendum sed, feugiat vel eros. Quisque ut nisi sed erat malesuada euismod. Aliquam feugiat erat eget sodales imperdiet. Ut vel tortor auctor, rutrum lectus a, tempor nunc. Vivamus nec elit ornare, dictum urna sollicitudin, ornare diam. Nullam dictum arcu vitae odio ultrices iaculis.</p>
+    </div>
+    <h3>ellipse</h3>
+    <img src="coverr - frame at 0m2s.jpg" alt="COV" class="cp4">
+    <h3>ellipse 50% 40% at right</h3>
+    <img src="coverr - frame at 0m2s.jpg" alt="COV" class="cp5">
+    <h3>shape-outside property and ellipse</h3>
+     <div class="cp6div">
+        <img src="coverr - frame at 0m2s.jpg" alt="CO" class="cp6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac laoreet quam, id aliquet nisl. Etiam id eros ligula. Aenean euismod, enim sed mollis feugiat, magna massa cursus leo, ut maximus metus eros non ante. Praesent eget tincidunt mauris, ut euismod ipsum. In hac habitasse platea dictumst. In dapibus tortor magna, elementum elementum neque sagittis id. Integer vestibulum semper dui, quis finibus libero elementum nec. Fusce ultricies lectus a eros interdum, efficitur iaculis nibh varius. Praesent sed ex bibendum, fermentum tortor nec, tincidunt augue. Maecenas in lobortis ligula, at viverra velit. Donec facilisis blandit purus sed efficitur. Duis est augue, bibendum quis bibendum sed, feugiat vel eros. Quisque ut nisi sed erat malesuada euismod. Aliquam feugiat erat eget sodales imperdiet. Ut vel tortor auctor, rutrum lectus a, tempor nunc. Vivamus nec elit ornare, dictum urna sollicitudin, ornare diam. Nullam dictum arcu vitae odio ultrices iaculis.</p>
+    </div>
+    <h3>polygon</h3>
+    <img src="coverr - frame at 0m2s.jpg" alt="COV" class="cp7">
+</body>
+</html>

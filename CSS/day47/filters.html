@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Filter Effects</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .main{
+            position:sticky;
+            float:right;
+            top:0;
+            height:300px;
+            width:300px;
+        }
+        .img0{
+            position:relative;
+            height:300px;
+            width:300px;
+            padding-top:5px;
+            padding-right:10px;
+        }
+        .imgtxt{
+            position:absolute;
+            text-align:center;
+            bottom:0;
+            width:100%;
+            color:white;
+        }
+        .img1{
+            display:block;
+            filter:blur(3px);
+            height:300px;
+            width:300px;
+        }
+        .img2{
+            display:block;
+            filter:brightness(300%);
+            height:300px;
+            width:300px;
+        }
+        .img3{
+            display:block;
+            filter:contrast(150%);
+            height:300px;
+            width:300px;
+        }
+        .img4{
+            display:block;
+            filter:drop-shadow(5px 5px 5px red);
+            height:300px;
+            width:300px;
+        }
+        .img5{
+            display:block;
+            filter:grayscale(90%);
+            height:300px;
+            width:300px;
+        }
+        .img6{
+            display:block;
+            filter:hue-rotate(-120deg);
+            height:300px;
+            width:300px;
+        }
+        .img7{
+            display:block;
+            filter:invert(1);
+            height:300px;
+            width:300px;
+        }
+        .img8{
+            display:block;
+            filter:opacity(50%);
+            height:300px;
+            width:300px;
+        }
+        .img9{
+            display:block;
+            filter:saturate(200%);
+            height:300px;
+            width:300px;
+        }
+        .img10{
+            display:block;
+            filter:sepia(60%);
+            height:300px;
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Image Filter Effects</h1>
+    <p>The <code>filter</code> property is used to add visual effects to an element. Funtions of this filter include: <code>blur(),brightness(),contrast(),drop-shadow(),grayscale(),hue-rotate(),invert(),opacity(),saturate(),sepia()</code>.</p>
+    <div class="main">
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img0">
+    <div class="imgtxt">Original Image</div>
+    </div>
+    <p>The <code>blur()</code> function adds blur to an element.</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img1">
+    <p>The <code>brightness()</code> function adjusts the brightness of an element.</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img2">
+    <p>The <code>contrast()</code> function adjusts the contrast of the element.</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img3">
+    <p>The <code>drop-shadow()</code> function applies drop-shadow to an element.</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img4">
+    <p>The <code>grayscale()</code> function converts an image to grayscale.</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img5">
+    <p>The <code>hue-rotate()</code> function applies color rotation to an element.</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img6">
+    <p>The <code>invert()</code> function inverts the color of an image.</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img7">
+    <p>The <code>opacity()</code> function defines the opacity of an element.</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img8">
+    <p>The <code>saturate()</code> function adjusts the saturation or color intensity of an element.</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img9">
+    <p>The <code>sepia()</code> function makes an image browner(sepia)</p>
+    <img src="pexels-sohi-807598.jpg" alt="LEAVES" class="img10">
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Centering</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .img1{
+            margin:auto;
+            display:block;
+            width:50%;
+            height:auto;
+        }
+        .img2{
+            display:flex;
+            justify-content: center;
+        }
+        #img2{
+            width:50%;
+            height:auto;
+        }
+        .img3{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:600px;
+            border:1px solid #bbb;
+            width:600px;
+            margin:auto;
+        }
+        #img3{
+            height:400px;
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Image Centering</h1>
+<p>Images can be centered horizontally in 2 ways:</p>
+<ol>
+    <li>It can be centered horizontally using <code>margin:auto</code>. When using this property, the <code>width</code> must be smaller than that of the page and <code>display:block</code>. <br><br><br>
+    <img src="coverr - frame at 0m2s.jpg" alt="ALI" class="img1"></li>
+    <br><br>
+    <li>It can also be centered using <code>display:flex</code> and <code>justify-content:center</code>. The <code>width</code> must also be smaller than the page. We put the image in a div container with the css properties.
+        <br><br>
+        <div class="img2">
+    <img src="coverr - frame at 0m2s.jpg" alt="ALT" id="img2"></li>
+        </div>
+</ol> 
+<p>Images can be centered vertically with <code>display:flex</code>. We also use a div element for this task. we use the <code>align-items:center</code> to vertically  center the image. The height of the image must be smaller than the div container.</p>
+<div class="img3">
+    <img src="coverr - frame at 0m2s.jpg" alt="ALTERNATE" id="img3">
+</div>   
+</body>
+</html>
