@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .mask{
+            -webkit-mask-image:url(icons8-superman-500.png);
+            mask-image:url(icons8-superman-500.png);
+            mask-repeat:no-repeat;
+        }
+        .mask2{
+            -webkit-mask-image:linear-gradient(black,transparent);
+            mask-image:linear-gradient(black,transparent);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Masking</h1>
+    
+    <p>The <code>mask-image</code> property specifies a mask layer image.</p>
+    <div class="mask">
+        <img src="Kung Fu Panda Wallpapers Aesthetic.jpeg" alt="real" height="600px" width="auto">
+    </div>
+    <h3>Gradient Examples</h3>
+    <div class="mask2">
+    <img src="Kung Fu Panda Wallpapers Aesthetic.jpeg" alt="real" height="500px" width="auto">
+    </div>
+</body>
+</html>
