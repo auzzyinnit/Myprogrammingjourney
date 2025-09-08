@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Button</title>
+    <style>
+        .button1{
+           display:inline-block;
+           color:white;
+           background-color:indianred;
+           padding:15px 25px;
+           border:3px solid indianred;
+           font-size:30px;
+            border-radius:3px;
+            transition:background-color .5s,color 0.5s,font-size .5s;
+            box-shadow:0px 0px 8px 0px rgba(0,0,0,0.5);
+        }
+        .button1:hover{
+            background-color:transparent;
+            color:black;
+            font-size:40px;
+        }
+        .disabled{
+            cursor:not-allowed;
+            font:30px;
+            padding:15px 25px;
+            border-radius:3px;
+            background-color:brown;
+            color:white;
+            display:inline-block;
+            border:none;
+        }
+        .disabled:hover{
+            opacity:0.5;
+        }
+        .animate{
+            border:none;
+            font-size:30px;
+            background-color:aquamarine;
+            display:inline-block;
+            width:200px;
+            padding:15px 25px;
+            border-radius:5px;
+            box-shadow:0 0 6px 0 rgba(0,0,0,0.5);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            transition:all 0.5s;
+        }
+        .animate:hover{
+            background-color:white;
+        }
+        .animate span{
+            display:inline-block;
+            position:relative;
+            transition:0.5s
+        }
+        .animate span:after{
+            content:'\00bb';
+            position:absolute;
+            opacity:0;
+            top:0px;
+            right:-20px;
+            transition:0.5s;
+        }
+        .animate:hover span{
+            padding-right:40px;
+        }
+        .animate:hover span:after{
+            opacity:1;
+            right:0;
+            
+        }
+        .click{
+            display:inline-block;
+            background-color:navy;
+            padding:15px 25px;
+            font-size:30px;
+            border-radius:5px;
+            border:2px solid navy;
+            box-shadow:0 9px rgb(200,200,200);
+            color:white;
+            transition:all .3s
+        }
+        .click:hover{
+            background-color:white;
+            color:black;
+        }
+        .click:active{
+            background-color:white;
+            box-shadow:0 5px rgb(100,100,100);
+            transform:translateY(4px);
+        }
+        .ripple{
+            display:inline-block;
+            padding:20px 40px;
+            font-size:40px;
+            border:none;
+            background-color:olive;
+            color:white;
+            border-radius:8px;
+            transition:all .5s;
+            position:relative;
+            overflow:hidden;
+        }
+        .ripple:after{
+            content:"";
+            background-color:#ddd;
+            display:block;
+            position:absolute;
+            padding-top:300%;
+            padding-left:300%;
+            margin-left:-40px !important;
+            margin-top:-120%;
+            opacity:0;
+            transition:all .8s;
+        }
+        .ripple:active:after{
+            padding:0;
+            margin:0;
+            opacity:1;
+            transition:0s;
+        }
+    </style>
+</head>
+<body>
+<p>"Basic Button"</p>
+<button class="button1">Reece</button>
+<p>Disabled Button</p>
+<button class="disabled">You Can't</button>
+<p>Animated Buttons</p>
+<button class="animate"><span style="vertical-align:middle">Whips</span></button>
+<button class="click">Lower</button>
+<button class="ripple">Ripple</button>
+</body>
+</html>
