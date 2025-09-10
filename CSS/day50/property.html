@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS @property Rule</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        @property --my-bg-color{
+            syntax:"<color>";
+            inherits:true;
+            initial-value:beige;
+        }
+        @property --my-txt-color{
+            syntax:"<color>";
+            inherits:true;
+            initial-value:navy;
+        }
+        @property --startcolor{
+            syntax:"<color>";
+            inherits:false;
+            initial-value: #EADEDB
+
+        }
+        @property --endcolor{
+            syntax:"<color>";
+            initial-value:#BC70A4;
+            inherits:false
+        }
+        .flo{
+            background:linear-gradient(var(--startcolor),var(--endcolor));
+            animation:gradient 3s linear infinite;
+        }
+        @keyframes gradient{
+            0%,100%{ --startcolor: #EADEDB;
+                     --endcolor: #BC70A4;
+        }
+        50%{
+            --startcolor: #BC70A4;
+            --endcolor: #BFD641;
+        }
+        }
+        div{
+            width:500px;
+            height:400px; 
+            color:var(--my-txt-color);
+            background-color:var(--my-bg-color);  
+        }
+        code{
+            color:black;
+        }
+ </style>
+</head>
+<body>
+    <div class="flo">
+    <h1>CSS @property Rule</h1>
+    <p>The <code>@property</code> rule is used for defining custom CSS properties directly in the stylesheet without running any javascript. animations can also be created with the <code>@property</code> rule as well.</p>
+    
+    </div>
+</body>
+</html>

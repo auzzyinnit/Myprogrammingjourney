@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box-Sizing</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .div1{
+            width:300px;
+            height:200px;
+            box-sizing: border-box;
+            border:1px solid blue;
+            padding:20px;
+        }
+         .div2{
+            width:300px;
+            height:200px;
+            border:1px solid red;
+            padding:20px;
+        }
+        .div3{
+          width:300px;
+            height:200px;
+            box-sizing: border-box;
+            border:1px solid green;
+            padding:80px;   
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box-Sizing</h1>
+    <p>The <code>box-sizing</code> property is used to add padding and border to an elements total width and height.</p>
+    <div class="div1">
+        This div has box-sizing with 300px width and 200px height. and 20px padding.
+    </div>
+    <br>
+     <div class="div3">This div has box-sizing with 300px width and 200px height and 80px padding.</div>
+     <br>
+    <div class="div2">This div does not have box sizing with 300px width and 200px height and 20px padding.</div>
+</body>
+</html>

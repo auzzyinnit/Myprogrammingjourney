@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        :root{
+            --red:#ff5555;
+            --green:#55ff55;
+            --white:rgb(200,200,200);
+            --fontsize:35px;
+        }
+        body{
+            background-color:var(--white);
+            font-size:var(--fontsize)
+        }
+        .var h1{
+            color:var(--green);
+        }
+        .var{
+            border:2px solid var(--green)
+        }
+        code{
+            color:var(--green)
+        }
+        .fry{
+            --green:#50bb50;
+            color:var(--green)
+        }
+        @media screen and (max-width:1200px){
+            body{
+                --fontsize:15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="var">
+    <h1>CSS Variables</h1>
+    <p>The <code>var()</code> function is used to insert the value of a CSS variable. CSS variables can have a global or local scope. To create a variable with a global scope,declare it inside the <code>:root</code> selector, which matches the document's root element. To create a variable wuth a local scope, declare it inside it's selector. The <code>var()</code> function makes code easier to read and easier to change color values</p>
+    </div>
+    <span class="fry">A different shade of green. This overrides the global variable.</span>
+    <p>Variables have access to the  DOM(Document Object Model), so it can be changed with javascript. Variables can also be changed inside the media query.</p>
+</body>
+</html>
