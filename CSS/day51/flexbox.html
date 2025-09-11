@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .flex{
+            display:flex;
+            flex-flow:row nowrap;
+            align-items:center;
+            background-color:rgb(100,100,100)
+        }
+        .flex div{
+            background-color:white;
+            padding:15px;
+            font-size:40px;
+            margin:5px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Flexbox</h1>   
+<p>Flexbox is short for Flexible Box layout module. It is a layout method used for arranging items in rows and columns. It makes it easier to design a flexible responsive layout without using float or positioning. Flexbox is one-dimensional(rows or columns), while grid is 2-dimensional(grind and column). A flexbox always consists of a container &lt;div&gt; element and the items &lt;div&gt;</p>
+<div class="flex">
+    <div style="order:10;flex-grow:1">1</div>
+    <div style="order:9;flex-grow:2">2</div>
+    <div style="order:8;flex-grow:3">3</div>
+    <div style="order:7;flex-grow:4">4</div>
+    <div style="order:6;flex-grow:5">5</div>
+    <div style="order:5;flex-grow:6">6</div>
+    <div style="order:4;flex-grow:7">7</div>
+    <div style="order:3;flex-grow:8">8</div>
+    <div style="order:2;flex-grow:9">9</div>
+    <div style="order:1;flex-grow:10">10</div>
+</div> 
+<p>The container becomes flexible by setting <code>display</code> to <code>flex</code>. The <code>flex-direction</code> property specifies the display-direction of flex items in the flex container. <code>row-reverse</code> and <code>column-reverse</code> flips the direction of <code>row</code> and <code>column</code>. <code>flex-wrap</code> property specfies wether flex items should wrap or not. <code>nowrap</code> is the default. <code>flex-flow</code> property is a shorthand for <code>flex-wrap</code> and <code>flex-direction</code>. The <code>justify-content</code> property is used to align items horizontally when they do not use all the space available. The <code>align-items</code> property is used to align items vertically when they do not use all the space available. The values of <code>justify-content</code> and <code>align-items</code> are <code>center,flex-start,flex-end,stretch,</code>etc. The <code>align-content</code> property is similar to the <code>align-item</code> property but it adjusts the flex-lines instead of the flex-items. To perfectly center an item, set <code>align-item</code> and <code>justify-content</code> to center.</p>
+
+<h2>CSS Flex Items</h2>
+<p>The direct child elements of a flex container automatically become the flex items. The <code>order</code> property specifies the order of the flex items of the flex container. The default value is 0. The <code>flex-grow</code> property specifies how much a flex item will grow relative to the rest of the flex items.The default value is 0. The <code>flex-shrink</code> property specifies how much a flex item will shrink compared to the rest of the flex items. Default value is 1. The <code>flex-basis</code> property specifies the initial length of a flex item. The <code>flex</code> property is a short hand for <code>flex-grow,flex-shrink,flex-basis</code>.The <code>align-self</code> property specifies the alignment of a particular element in the flex container.</p>
+</body>
+</html>

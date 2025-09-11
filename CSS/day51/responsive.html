@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Responsive</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+        }
+        .main{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .pillars{
+            flex:33.33%;
+            max-width:33.33%;
+            padding:0 4px;
+        }
+        .pillars img{
+            vertical-align:middle;   
+            margin-top:5px;
+            transition:all 0.5s;
+        }
+        .pillars img:hover{
+            opacity:0.5;
+        }
+        @media (max-width:800px){
+            .pillars{
+                flex:50%;
+                max-width:50%;
+            }
+        }
+        @media(max-width:600px){
+            .pillars{
+                flex:100%;
+                max-width:100%
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>My Gallery</h1>
+<div class="main">
+    <div class="pillars">
+        <img src="elisaveta-bunduche-TOL5F-3qqB4-unsplash.jpg" alt="1" width="100%">
+        <img src="ignacio-garcia-r38iMmvrFW0-unsplash.jpg" alt="2" width="100%">
+        <img src="Kung Fu Panda Wallpapers Aesthetic.jpeg" alt="3" width="100%">
+        <img src="nour-tayeh-UPZuaTVaZgo-unsplash.jpg" alt="4" width="100%">
+        <img src="yonan-farah-5Nt_NxmArJ0-unsplash.jpg" alt="5" width="100%">
+    </div>
+    <div class="pillars">
+        <img src="nour-tayeh-UPZuaTVaZgo-unsplash.jpg" alt="4" width="100%">
+        <img src="ignacio-garcia-r38iMmvrFW0-unsplash.jpg" alt="2" width="100%">
+        <img src="yonan-farah-5Nt_NxmArJ0-unsplash.jpg" alt="5" width="100%">
+        <img src="elisaveta-bunduche-TOL5F-3qqB4-unsplash.jpg" alt="1" width="100%">
+        <img src="Kung Fu Panda Wallpapers Aesthetic.jpeg" alt="3" width="100%">
+    </div>
+    <div class="pillars">
+        <img src="Kung Fu Panda Wallpapers Aesthetic.jpeg" alt="3" width="100%">
+        <img src="nour-tayeh-UPZuaTVaZgo-unsplash.jpg" alt="4" width="100%">
+        <img src="yonan-farah-5Nt_NxmArJ0-unsplash.jpg" alt="5" width="100%">
+        <img src="ignacio-garcia-r38iMmvrFW0-unsplash.jpg" alt="2" width="100%">
+        <img src="elisaveta-bunduche-TOL5F-3qqB4-unsplash.jpg" alt="1" width="100%"> 
+    </div>
+</div>
+</body>
+</html>
