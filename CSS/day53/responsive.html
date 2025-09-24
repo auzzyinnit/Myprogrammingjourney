@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive Proper</title>
+    <style>
+         @property --startcolor{
+             syntax:"<color>";
+            inherits:false;
+            initial-value:#f00;
+
+        }
+        @property --middlecolor{
+            syntax:"<color>";
+            inherits:false;
+            initial-value:#ffe4c4;
+            inherits:false;
+        }
+        @property --endcolor{
+            syntax:"<color>";
+            initial-value:#ffe4c4;
+            inherits:false;
+        }
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .maingrid {
+            display: grid;
+            grid-template-areas: 'head head head head head' 'menu main main main aside' 'footer footer footer footer footer';
+            gap: 1px;
+            padding: 5px;
+        }
+
+        .maingrid>div {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .div1 {
+            grid-area: head;
+            background-color: burlywood;
+            color: brown;
+            text-align: center;
+            border: 2px solid red;
+            outline: 2px solid salmon;
+        }
+        .div1 h2{
+            font-size:20px;
+            color:rgba(165,42,42,0.5)
+        }
+        .div2 {
+            grid-area: menu;
+            background-color: blanchedalmond;
+            border: 2px solid red;
+            outline: 2px solid salmon;
+        }
+
+        .div2>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .div2 li {
+            background-color: burlywood;
+            color: black;
+            margin: 2px;
+            margin-bottom: 5px;
+            padding: 4px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+            transition:all .5s
+        }
+
+        .div2 li:hover {
+            background-color:crimson;
+        }
+
+        li a {
+            text-decoration: none;
+            color: inherit;
+        }
+         li a:hover{
+            background-color:crimson;
+         }
+        .div3 {
+            grid-area: main;
+            background-color: blanchedalmond;
+            border: 2px solid red;
+            outline: 2px solid salmon;
+        }
+
+        .div4 {
+            grid-area: aside;
+            border: 2px solid red;
+            outline: 2px solid salmon;
+            background-color: blanchedalmond;
+        }
+
+        .div5 {
+            grid-area: footer;
+            text-align: center;
+            background-color: #ffe4c4;
+            color: rgb(155, 128, 96);
+            border: 2px solid red;
+            outline: 2px solid salmon;
+            animation:ffs 1s alternate infinite;
+            background:linear-gradient(to left, var(--startcolor),var(--endcolor));
+        }
+        @keyframes ffs{
+            0%{
+                --startcolor:#f00;
+                --endcolor:#ffe4c4;
+            }
+            100%{
+                --startcolor:#ffe4c4;
+                --endcolor:#f00;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maingrid">
+        <div class="div1">
+            <h1>CSS Responsive</h1>
+            <h2><i>...with grid.</i></h2>
+        </div>
+        <div class="div2">
+            <ul>
+                <li>About</li>
+                <li>Javascript</li>
+                <li><a href="">Template 1</a></li>
+                <li><a href="">Template 2</a></li>
+                <li><a href="">Template 3</a></li>
+                <li><a href="">Template 4</a></li>
+            </ul>
+        </div>
+        <div class="div3">
+            <p>This is probably the best use of CSS. CSS Resposive allows the programmer to ensure that the website
+                looks good on all devices.</p>
+        </div>
+        <div class="div4">CSS and HTML go hand in hand, as CSS is used to effectively style HTML.</div>
+        <div class="div5"><i>First of Many...</i></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid item</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+<style>
+    .grid2{
+        display:grid;
+        border:2px solid black;
+        background-color:#dcdcdc;
+        grid-template-areas:'head head head head head'
+                            'menu main main main aside'
+                            'menu main main main aside'
+                            'footer footer footer footer footer';
+        padding:5px;
+        gap:5px;
+    }
+    .grid2>div{
+        background-color:#444;
+        color:white;
+        font-size:40px;
+        text-align:center;
+        border:2px solid black;
+        padding:20px 0px;
+        box-sizing:border-box;
+    }
+    .item1{
+        grid-area:head;
+    }
+    .item2{
+        grid-area:menu;
+    }
+    .item3{
+        grid-area:main;
+        font-size:15px !important;
+    }
+    .item4{
+        grid-area:aside;
+    }
+    .item5{
+        grid-area:footer;
+        font-size:15px !important;
+    }
+        
+</style>
+<body>
+    <h1>CSS Grid Items</h1>
+    <div class="grid2">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">The <code>justify-self</code> property is used to align grid items along the row axis. The <code>align-self</code> property is used to align grid items along the column axis.</div>
+        <div class="item4">Aside</div>
+        <div class="item5">The CSS <code>@supports</code> rule checks if the browser supports a specific CSS property or value, and to define fallback styles if the feature is not supported.</div>
+    </div>
+</body>
+
+</html>
